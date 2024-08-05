@@ -1,0 +1,278 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>【前端新手筆記】2-HTML常用標籤 | 即溶啟思</title><meta name="author" content="邵 SHAO"><meta name="copyright" content="邵 SHAO"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="上一篇文章中，我們有提到HTML標籤以及它的表達方式，這篇文章主要想要紀錄我常用HTML標籤。 網站標題標題有h1-h6，其中最重要的是h1，一個網站只會有一個h1標題，通常就是該網站或文章的主旨。 1&lt;h1&gt;標題&lt;&#x2F;h1&gt;   文字內容文章的內容可以使用p標籤來呈現，每一個p標籤就是一個段落。 12&lt;p&gt;歡迎來到即溶啟思！我是站長 邵Shao，我喜歡閱讀、喜歡">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【前端新手筆記】2-HTML常用標籤">
+<meta property="og:url" content="https://oxfoxlion.github.io/2024/06/14/%E3%80%90%E5%89%8D%E7%AB%AF%E6%96%B0%E6%89%8B%E7%AD%86%E8%A8%98%E3%80%912-HTML%E5%B8%B8%E7%94%A8%E6%A8%99%E7%B1%A4/index.html">
+<meta property="og:site_name" content="即溶啟思">
+<meta property="og:description" content="上一篇文章中，我們有提到HTML標籤以及它的表達方式，這篇文章主要想要紀錄我常用HTML標籤。 網站標題標題有h1-h6，其中最重要的是h1，一個網站只會有一個h1標題，通常就是該網站或文章的主旨。 1&lt;h1&gt;標題&lt;&#x2F;h1&gt;   文字內容文章的內容可以使用p標籤來呈現，每一個p標籤就是一個段落。 12&lt;p&gt;歡迎來到即溶啟思！我是站長 邵Shao，我喜歡閱讀、喜歡">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/html%E6%A8%99%E7%B1%A4%2F%E8%B5%B7%E6%80%9D%E6%96%87%E7%AB%A0_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F-1-2.jpg?alt=media&token=87ed38ac-8343-48a4-9b4b-4eedea8e0bc3">
+<meta property="article:published_time" content="2024-06-14T15:06:23.000Z">
+<meta property="article:modified_time" content="2024-08-05T15:26:25.209Z">
+<meta property="article:author" content="邵 SHAO">
+<meta property="article:tag" content="HTML">
+<meta property="article:tag" content="六角學院">
+<meta property="article:tag" content="網頁工程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/html%E6%A8%99%E7%B1%A4%2F%E8%B5%B7%E6%80%9D%E6%96%87%E7%AB%A0_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F-1-2.jpg?alt=media&token=87ed38ac-8343-48a4-9b4b-4eedea8e0bc3"><link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E5%8D%B3%E6%BA%B6%E8%B5%B7%E6%80%9D%E9%A0%BB%E9%81%930226_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.jpg?alt=media&token=238c8da3-4caf-4633-8ff0-02a758815f9f"><link rel="canonical" href="https://oxfoxlion.github.io/2024/06/14/%E3%80%90%E5%89%8D%E7%AB%AF%E6%96%B0%E6%89%8B%E7%AD%86%E8%A8%98%E3%80%912-HTML%E5%B8%B8%E7%94%A8%E6%A8%99%E7%B1%A4/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.14.0-b3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.35/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>(()=>{
+      const saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+      
+      window.btf = {
+        saveToLocal: saveToLocal,
+        getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+          script.src = url
+          script.async = true
+          script.onerror = reject
+          script.onload = script.onreadystatechange = function() {
+            const loadState = this.readyState
+            if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+            script.onload = script.onreadystatechange = null
+            resolve()
+          }
+
+          Object.keys(attr).forEach(key => {
+            script.setAttribute(key, attr[key])
+          })
+
+          document.head.appendChild(script)
+        }),
+
+        getCSS: (url, id = false) => new Promise((resolve, reject) => {
+          const link = document.createElement('link')
+          link.rel = 'stylesheet'
+          link.href = url
+          if (id) link.id = id
+          link.onerror = reject
+          link.onload = link.onreadystatechange = function() {
+            const loadState = this.readyState
+            if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+            link.onload = link.onreadystatechange = null
+            resolve()
+          }
+          document.head.appendChild(link)
+        }),
+
+        addGlobalFn: (key, fn, name = false, parent = window) => {
+          const pjaxEnable = false
+          if (!pjaxEnable && key.startsWith('pjax')) return
+
+          const globalFn = parent.globalFn || {}
+          const keyObj = globalFn[key] || {}
+    
+          if (name && keyObj[name]) return
+    
+          name = name || Object.keys(keyObj).length
+          keyObj[name] = fn
+          globalFn[key] = keyObj
+          parent.globalFn = globalFn
+        }
+      }
+    
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+      
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })()</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":true,"highlightMacStyle":false},
+  copy: {
+    success: '複製成功',
+    error: '複製錯誤',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '載入更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '【前端新手筆記】2-HTML常用標籤',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-08-05 23:26:25'
+}</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="即溶啟思" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://gravatar.com/userimage/249589667/5fe7b02aef00ead31e296938b8d87bb8.jpeg?size=256" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">6</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/"><span> 網頁工程</span></a></div><div class="menus_item"><span class="site-page group"><span> 閱讀筆記</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98/%E6%96%87%E5%AD%B8%E5%B0%8F%E8%AA%AA/"><span> 文學小說</span></a></li><li><a class="site-page child" href="/categories/%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98/%E5%80%8B%E4%BA%BA%E6%88%90%E9%95%B7/"><span> 個人成長</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="即溶啟思"><img class="site-icon" src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E5%8D%B3%E6%BA%B6%E8%B5%B7%E6%80%9D%E9%A0%BB%E9%81%930226_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.jpg?alt=media&amp;token=238c8da3-4caf-4633-8ff0-02a758815f9f" alt="Logo"/><span class="site-name">即溶啟思</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/"><span> 網頁工程</span></a></div><div class="menus_item"><span class="site-page group"><span> 閱讀筆記</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98/%E6%96%87%E5%AD%B8%E5%B0%8F%E8%AA%AA/"><span> 文學小說</span></a></li><li><a class="site-page child" href="/categories/%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98/%E5%80%8B%E4%BA%BA%E6%88%90%E9%95%B7/"><span> 個人成長</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">【前端新手筆記】2-HTML常用標籤</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">發表於</span><time class="post-meta-date-created" datetime="2024-06-14T15:06:23.000Z" title="發表於 2024-06-14 23:06:23">2024-06-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新於</span><time class="post-meta-date-updated" datetime="2024-08-05T15:26:25.209Z" title="更新於 2024-08-05 23:26:25">2024-08-05</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/">網頁工程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="【前端新手筆記】2-HTML常用標籤"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">閱讀量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><p>上一篇文章中，我們有提到HTML標籤以及它的表達方式，這篇文章主要想要紀錄我常用HTML標籤。</p>
+<h2 id="網站標題"><a href="#網站標題" class="headerlink" title="網站標題"></a>網站標題</h2><p><strong>標題有h1-h6</strong>，其中最重要的是h1，一個網站只會有一個h1標題，通常就是該網站或文章的主旨。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>標題<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/html%E6%A8%99%E7%B1%A4%2F2.png?alt=media&token=3c2d3bbe-70e4-40c3-921b-934a2a3368e2"></p>
+<h2 id="文字內容"><a href="#文字內容" class="headerlink" title="文字內容"></a>文字內容</h2><p>文章的內容可以使用<strong>p標籤</strong>來呈現，每一個p標籤就是一個段落。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>歡迎來到即溶啟思！我是站長 邵Shao，我喜歡閱讀、喜歡學習，而這是我練習輸出所學的一個平台。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>我在這裡試著用最簡單的方式，分享啟發思考的知識，而我今天要跟大家分享什麼是HTML，和CSS有什麼差別？<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/html%E6%A8%99%E7%B1%A4%2F3.png?alt=media&token=029622fc-b5b3-4d3b-9b68-84aeab025d9f"></p>
+<h3 id="斷行標籤"><a href="#斷行標籤" class="headerlink" title="斷行標籤"></a>斷行標籤</h3><p>如果希望文字屬於同一個段落，但又希望在下一行顯示，可以使用 <code>&lt;br&gt;</code>標籤</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>歡迎來到即溶啟思！我是站長 邵Shao，我喜歡閱讀、喜歡學習，而這是我練習輸出所學的一個平台。</span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>&gt;</span>我在這裡試著用最簡單的方式，分享啟發思考的知識，而我今天要跟大家分享什麼是HTML，和CSS有什麼差別？<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/html%E6%A8%99%E7%B1%A4%2F4.png?alt=media&token=b06e2444-07e9-4df9-bb58-bd49ce4e2e47"></p>
+<h2 id="嵌入連結"><a href="#嵌入連結" class="headerlink" title="嵌入連結"></a>嵌入連結</h2><p>想要在網站中嵌入連結的話，就必須使用a標籤。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://instantcheeseshaocom.local/&quot;</span> <span class="attr">title</span>=<span class="string">&quot;即溶啟思&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>即溶啟思<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/html%E6%A8%99%E7%B1%A4%2F5.png?alt=media&token=f3d60e57-4f3f-4697-9f2c-27842edfc1e6"></p>
+<p>a標籤可以嵌入在其他標籤內</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/html%E6%A8%99%E7%B1%A4%2F6.png?alt=media&token=1896c573-1dc3-47ea-9859-79a8bf45165d"></p>
+<p>a標籤也可以被獨立撰寫</p>
+<h3 id="a標籤屬性設定"><a href="#a標籤屬性設定" class="headerlink" title="a標籤屬性設定"></a>a標籤屬性設定</h3><p>屬性就是寫在標籤內，用於記錄這個標籤的資訊，以這種方式做表達：</p>
+<p><code>屬性=&quot;設定值&quot;</code></p>
+<p>每種屬性都有必須填入的對應值。</p>
+<h4 id="1-href屬性"><a href="#1-href屬性" class="headerlink" title="1. href屬性"></a>1. href屬性</h4><p>用於填寫連結網址<br><code>href=&quot;http://instantcheeseshaocom.local/&quot;</code></p>
+<h4 id="2-title屬性"><a href="#2-title屬性" class="headerlink" title="2. title屬性"></a>2. title屬性</h4><p>標明這個連結的名稱，當滑鼠移動到連結上方會顯示出來<br><code>title=&quot;即溶啟思&quot;</code></p>
+<h4 id="3-target屬性"><a href="#3-target屬性" class="headerlink" title="3. target屬性"></a>3. target屬性</h4><p>設定使用者將如何開啟這個連結，比較常用是這兩個：</p>
+<p><code>target=&quot;_blank&quot;</code></p>
+<ul>
+<li>_self：直接在當前視窗中打開，如果沒有設定target屬性，就會以這個為預設，這麼一來原本在瀏覽的網站就會被轉到連結上。</li>
+<li>_blank：在新視窗中開啟。</li>
+</ul>
+<p>完整的寫法就請參考上方的a標籤囉。</p>
+<h2 id="嵌入圖片"><a href="#嵌入圖片" class="headerlink" title="嵌入圖片"></a>嵌入圖片</h2><p>圖片可以用img標籤嵌入。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;http://instantcheeseshaocom.local/wp-content/uploads/2024/04/cropped-%E5%8D%B3%E6%BA%B6%E8%B5%B7%E6%80%9D%E9%A0%BB%E9%81%930226_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F-1-scaled-1.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;即溶啟思&quot;</span> <span class="attr">title</span>=<span class="string">&quot;即溶啟思&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/html%E6%A8%99%E7%B1%A4%2F7.png?alt=media&token=c9d043b7-1ca5-4941-b682-d517a7c89812"></p>
+<p>img標籤只能設定屬性，也不需要結束標籤</p>
+<h3 id="img標籤屬性"><a href="#img標籤屬性" class="headerlink" title="img標籤屬性"></a>img標籤屬性</h3><h4 id="1-src屬性"><a href="#1-src屬性" class="headerlink" title="1. src屬性"></a>1. src屬性</h4><p>在這裡填入圖片連結，可以是圖片網址，或者是描述該HTML檔案的相對位置。</p>
+<h4 id="2-alt屬性"><a href="#2-alt屬性" class="headerlink" title="2. alt屬性"></a>2. alt屬性</h4><p>這是圖片的描述，當圖片失效顯示不出來的時候，就會以圖片描述的方式出現。<br><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/html%E6%A8%99%E7%B1%A4%2F8.png?alt=media&token=cbbad195-f5c2-45bd-8b41-ad9090d942fb"></p>
+<h4 id="3-title屬性"><a href="#3-title屬性" class="headerlink" title="3. title屬性"></a>3. title屬性</h4><p>一樣可以加入title屬性，讓使用者滑鼠移到圖片上方時顯示相對應的名稱。</p>
+<h2 id="製作列表"><a href="#製作列表" class="headerlink" title="製作列表"></a>製作列表</h2><p>在HTML中，我常用兩種列表：無序列表與有序列表。</p>
+<h3 id="無序列表"><a href="#無序列表" class="headerlink" title="無序列表"></a>無序列表</h3><p>無序列表用<code>&lt;ul&gt;</code>標籤來表示，當中的每一點則用<code>&lt;li&gt;</code>標籤表示。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>無序列表<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>就是沒有順序<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>這樣子<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/html%E6%A8%99%E7%B1%A4%2F9.png?alt=media&token=7d043ec7-a88f-4ab5-8a16-fa7265a3e76c"></p>
+<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><p>有序列表用<code>&lt;ol&gt;</code>標籤來表示，內容每一點一樣用<code>&lt;li&gt;</code>標籤表示。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>第一點<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>第二點<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>第三點<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/html%E6%A8%99%E7%B1%A4%2F10.png?alt=media&token=e9590f3f-284e-4fdb-8787-50b21dcb0747"></p>
+<p>以上就是簡單的常用標籤分享，之後希望可以分享標籤的組合技，以及排版用的標籤，那就先這樣子囉!!希望你們會喜歡我的分享。</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/HTML/">HTML</a><a class="post-meta__tags" href="/tags/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/">六角學院</a><a class="post-meta__tags" href="/tags/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/">網頁工程</a></div><div class="post_share"><div class="social-share" data-image="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/html%E6%A8%99%E7%B1%A4%2F%E8%B5%B7%E6%80%9D%E6%96%87%E7%AB%A0_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F-1-2.jpg?alt=media&amp;token=87ed38ac-8343-48a4-9b4b-4eedea8e0bc3" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/06/06/%E9%9B%A2%E8%81%B7%E4%B8%80%E5%80%8B%E6%9C%88%E5%BE%8C%E7%B5%82%E6%96%BC%E9%96%8B%E5%A7%8B%E6%9C%9F%E5%BE%85%E6%AF%8F%E4%B8%80%E5%A4%A9%EF%BC%9A%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A22024%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%BF%83%E5%BE%97/" title="離職一個月後終於開始期待每一天：六角學院2024工程師體驗營心得"><img class="cover" src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B5%B7%E6%80%9D%E6%96%87%E7%AB%A0_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.jpg?alt=media&amp;token=ce64c145-2652-4198-91f8-62ae9f2d4d64" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">離職一個月後終於開始期待每一天：六角學院2024工程師體驗營心得</div></div></a></div><div class="next-post pull-right"><a href="/2024/06/24/%E3%80%90Moodle%E7%AE%A1%E7%90%86%E8%80%85%E6%95%99%E5%AD%B8%E3%80%91%E7%B6%AD%E8%AD%B7%E6%88%90%E5%93%A1%E8%B3%87%E6%96%99%EF%BC%9A%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%E5%8F%88%E6%B2%92%E6%94%B6%E5%88%B0%E8%AA%8D%E8%AD%89%E4%BF%A1%E6%80%8E%E9%BA%BC%E8%BE%A6%EF%BC%9F/" title="【Moodle管理者教學】維護成員資料：忘記密碼又沒收到認證信怎麼辦？"><img class="cover" src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/Moodle%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%2F%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F-1-1-scaled.jpg?alt=media&amp;token=405e2722-52ae-433e-8e97-e987bc498288" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">【Moodle管理者教學】維護成員資料：忘記密碼又沒收到認證信怎麼辦？</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相關推薦</span></div><div class="relatedPosts-list"><div><a href="/2024/05/21/%E3%80%90%E5%89%8D%E7%AB%AF%E6%96%B0%E6%89%8B%E7%AD%86%E8%A8%98%E3%80%911-%E4%BB%80%E9%BA%BC%E6%98%AFHTML%EF%BC%9F%E4%BB%80%E9%BA%BC%E6%98%AFCSS%EF%BC%9F%E4%BD%BF%E7%94%A8CodePen%E9%AB%94%E9%A9%97%E6%92%B0%E5%AF%AB%E7%B6%B2%E7%AB%99%E5%90%A7%EF%BC%81/" title="【前端新手筆記】1-什麼是HTML？什麼是CSS？使用CodePen體驗撰寫網站吧！"><img class="cover" src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BB%80%E9%BA%BC%E6%98%AFHTML%E3%80%81CSS%2F1.jpg?alt=media&token=1181bfd4-543c-4f4d-b250-33fcdeedf747" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-05-21</div><div class="title">【前端新手筆記】1-什麼是HTML？什麼是CSS？使用CodePen體驗撰寫網站吧！</div></div></a></div><div><a href="/2024/06/06/%E9%9B%A2%E8%81%B7%E4%B8%80%E5%80%8B%E6%9C%88%E5%BE%8C%E7%B5%82%E6%96%BC%E9%96%8B%E5%A7%8B%E6%9C%9F%E5%BE%85%E6%AF%8F%E4%B8%80%E5%A4%A9%EF%BC%9A%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A22024%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%BF%83%E5%BE%97/" title="離職一個月後終於開始期待每一天：六角學院2024工程師體驗營心得"><img class="cover" src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B5%B7%E6%80%9D%E6%96%87%E7%AB%A0_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.jpg?alt=media&token=ce64c145-2652-4198-91f8-62ae9f2d4d64" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-06</div><div class="title">離職一個月後終於開始期待每一天：六角學院2024工程師體驗營心得</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://gravatar.com/userimage/249589667/5fe7b02aef00ead31e296938b8d87bb8.jpeg?size=256" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">邵 SHAO</div><div class="author-info__description">喜歡閱讀、分享，我在這裡練習用最簡單的方式，分享啟發思考的知識。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">6</div></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目錄</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B6%B2%E7%AB%99%E6%A8%99%E9%A1%8C"><span class="toc-number">1.</span> <span class="toc-text">網站標題</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E5%AD%97%E5%85%A7%E5%AE%B9"><span class="toc-number">2.</span> <span class="toc-text">文字內容</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B7%E8%A1%8C%E6%A8%99%E7%B1%A4"><span class="toc-number">2.1.</span> <span class="toc-text">斷行標籤</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B5%8C%E5%85%A5%E9%80%A3%E7%B5%90"><span class="toc-number">3.</span> <span class="toc-text">嵌入連結</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#a%E6%A8%99%E7%B1%A4%E5%B1%AC%E6%80%A7%E8%A8%AD%E5%AE%9A"><span class="toc-number">3.1.</span> <span class="toc-text">a標籤屬性設定</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-href%E5%B1%AC%E6%80%A7"><span class="toc-number">3.1.1.</span> <span class="toc-text">1. href屬性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-title%E5%B1%AC%E6%80%A7"><span class="toc-number">3.1.2.</span> <span class="toc-text">2. title屬性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-target%E5%B1%AC%E6%80%A7"><span class="toc-number">3.1.3.</span> <span class="toc-text">3. target屬性</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B5%8C%E5%85%A5%E5%9C%96%E7%89%87"><span class="toc-number">4.</span> <span class="toc-text">嵌入圖片</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#img%E6%A8%99%E7%B1%A4%E5%B1%AC%E6%80%A7"><span class="toc-number">4.1.</span> <span class="toc-text">img標籤屬性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-src%E5%B1%AC%E6%80%A7"><span class="toc-number">4.1.1.</span> <span class="toc-text">1. src屬性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-alt%E5%B1%AC%E6%80%A7"><span class="toc-number">4.1.2.</span> <span class="toc-text">2. alt屬性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-title%E5%B1%AC%E6%80%A7"><span class="toc-number">4.1.3.</span> <span class="toc-text">3. title屬性</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A3%BD%E4%BD%9C%E5%88%97%E8%A1%A8"><span class="toc-number">5.</span> <span class="toc-text">製作列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%84%A1%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">5.1.</span> <span class="toc-text">無序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">5.2.</span> <span class="toc-text">有序列表</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/06/24/%E3%80%90Moodle%E7%AE%A1%E7%90%86%E8%80%85%E6%95%99%E5%AD%B8%E3%80%91%E7%B6%AD%E8%AD%B7%E6%88%90%E5%93%A1%E8%B3%87%E6%96%99%EF%BC%9A%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%E5%8F%88%E6%B2%92%E6%94%B6%E5%88%B0%E8%AA%8D%E8%AD%89%E4%BF%A1%E6%80%8E%E9%BA%BC%E8%BE%A6%EF%BC%9F/" title="【Moodle管理者教學】維護成員資料：忘記密碼又沒收到認證信怎麼辦？"><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/Moodle%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%2F%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F-1-1-scaled.jpg?alt=media&amp;token=405e2722-52ae-433e-8e97-e987bc498288" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Moodle管理者教學】維護成員資料：忘記密碼又沒收到認證信怎麼辦？"/></a><div class="content"><a class="title" href="/2024/06/24/%E3%80%90Moodle%E7%AE%A1%E7%90%86%E8%80%85%E6%95%99%E5%AD%B8%E3%80%91%E7%B6%AD%E8%AD%B7%E6%88%90%E5%93%A1%E8%B3%87%E6%96%99%EF%BC%9A%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%E5%8F%88%E6%B2%92%E6%94%B6%E5%88%B0%E8%AA%8D%E8%AD%89%E4%BF%A1%E6%80%8E%E9%BA%BC%E8%BE%A6%EF%BC%9F/" title="【Moodle管理者教學】維護成員資料：忘記密碼又沒收到認證信怎麼辦？">【Moodle管理者教學】維護成員資料：忘記密碼又沒收到認證信怎麼辦？</a><time datetime="2024-06-24T15:27:50.000Z" title="發表於 2024-06-24 23:27:50">2024-06-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/06/14/%E3%80%90%E5%89%8D%E7%AB%AF%E6%96%B0%E6%89%8B%E7%AD%86%E8%A8%98%E3%80%912-HTML%E5%B8%B8%E7%94%A8%E6%A8%99%E7%B1%A4/" title="【前端新手筆記】2-HTML常用標籤"><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/html%E6%A8%99%E7%B1%A4%2F%E8%B5%B7%E6%80%9D%E6%96%87%E7%AB%A0_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F-1-2.jpg?alt=media&amp;token=87ed38ac-8343-48a4-9b4b-4eedea8e0bc3" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【前端新手筆記】2-HTML常用標籤"/></a><div class="content"><a class="title" href="/2024/06/14/%E3%80%90%E5%89%8D%E7%AB%AF%E6%96%B0%E6%89%8B%E7%AD%86%E8%A8%98%E3%80%912-HTML%E5%B8%B8%E7%94%A8%E6%A8%99%E7%B1%A4/" title="【前端新手筆記】2-HTML常用標籤">【前端新手筆記】2-HTML常用標籤</a><time datetime="2024-06-14T15:06:23.000Z" title="發表於 2024-06-14 23:06:23">2024-06-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/06/06/%E9%9B%A2%E8%81%B7%E4%B8%80%E5%80%8B%E6%9C%88%E5%BE%8C%E7%B5%82%E6%96%BC%E9%96%8B%E5%A7%8B%E6%9C%9F%E5%BE%85%E6%AF%8F%E4%B8%80%E5%A4%A9%EF%BC%9A%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A22024%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%BF%83%E5%BE%97/" title="離職一個月後終於開始期待每一天：六角學院2024工程師體驗營心得"><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B5%B7%E6%80%9D%E6%96%87%E7%AB%A0_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.jpg?alt=media&amp;token=ce64c145-2652-4198-91f8-62ae9f2d4d64" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="離職一個月後終於開始期待每一天：六角學院2024工程師體驗營心得"/></a><div class="content"><a class="title" href="/2024/06/06/%E9%9B%A2%E8%81%B7%E4%B8%80%E5%80%8B%E6%9C%88%E5%BE%8C%E7%B5%82%E6%96%BC%E9%96%8B%E5%A7%8B%E6%9C%9F%E5%BE%85%E6%AF%8F%E4%B8%80%E5%A4%A9%EF%BC%9A%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A22024%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%BF%83%E5%BE%97/" title="離職一個月後終於開始期待每一天：六角學院2024工程師體驗營心得">離職一個月後終於開始期待每一天：六角學院2024工程師體驗營心得</a><time datetime="2024-06-06T07:02:23.000Z" title="發表於 2024-06-06 15:02:23">2024-06-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/05/29/%E3%80%8A%E8%B6%85%E9%80%9F%E5%AD%B8%E7%BF%92%E3%80%8B%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98%EF%BC%9A%E7%82%BA%E4%BB%80%E9%BA%BC%E7%AB%8B%E5%8D%B3%E8%A1%8C%E5%8B%95%E6%AF%94%E8%81%BD%E8%AA%B2%E6%9B%B4%E6%9C%89%E7%94%A8%EF%BC%9F%E5%88%86%E4%BA%AB4%E5%80%8B%E7%9B%B4%E6%8E%A5%E5%AD%B8%E7%BF%92%E6%B3%95%EF%BC%81/" title="《超速學習》閱讀筆記：為什麼立即行動比聽課更有用？分享4個直接學習法！"><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B6%85%E9%80%9F%E5%AD%B8%E7%BF%92%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98%EF%BC%9A%E7%82%BA%E4%BB%80%E9%BA%BC%E7%AB%8B%E5%8D%B3%E8%A1%8C%E5%8B%95%E6%AF%94%E8%81%BD%E8%AA%B2%E6%9B%B4%E6%9C%89%E7%94%A8%EF%BC%9F%E5%88%86%E4%BA%AB4%E5%80%8B%E7%9B%B4%E6%8E%A5%E5%AD%B8%E7%BF%92%E6%B3%95%EF%BC%81%2F%E8%B6%85%E9%80%9F%E5%AD%B8%E7%BF%92_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F-1.jpg?alt=media&amp;token=bfaf0d62-2230-4323-960b-df295d36c00f" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《超速學習》閱讀筆記：為什麼立即行動比聽課更有用？分享4個直接學習法！"/></a><div class="content"><a class="title" href="/2024/05/29/%E3%80%8A%E8%B6%85%E9%80%9F%E5%AD%B8%E7%BF%92%E3%80%8B%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98%EF%BC%9A%E7%82%BA%E4%BB%80%E9%BA%BC%E7%AB%8B%E5%8D%B3%E8%A1%8C%E5%8B%95%E6%AF%94%E8%81%BD%E8%AA%B2%E6%9B%B4%E6%9C%89%E7%94%A8%EF%BC%9F%E5%88%86%E4%BA%AB4%E5%80%8B%E7%9B%B4%E6%8E%A5%E5%AD%B8%E7%BF%92%E6%B3%95%EF%BC%81/" title="《超速學習》閱讀筆記：為什麼立即行動比聽課更有用？分享4個直接學習法！">《超速學習》閱讀筆記：為什麼立即行動比聽課更有用？分享4個直接學習法！</a><time datetime="2024-05-29T13:16:08.000Z" title="發表於 2024-05-29 21:16:08">2024-05-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/05/27/%E5%8B%87%E6%95%A2%E9%81%B8%E6%93%87%E6%83%B3%E9%81%8E%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%9A%E9%97%9C%E6%96%BC%E3%80%8A%E6%AF%8F%E5%A4%A9%E5%AF%AB%EF%BC%8C%E9%87%8D%E6%96%B0%E5%AF%AB%EF%BC%8C%E5%AF%AB%E5%88%B0%E6%9C%80%E5%BE%8C%E3%80%8B%E6%88%91%E5%AD%B8%E5%88%B0%E7%9A%84%E4%BA%94%E4%BB%B6%E4%BA%8B/" title="勇敢選擇想過的人生：關於《每天寫，重新寫，寫到最後》我學到的五件事"><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E6%AF%8F%E5%A4%A9%E5%AF%AB%20%E9%87%8D%E6%96%B0%E5%AF%AB%20%E5%AF%AB%E5%88%B0%E6%9C%80%E5%BE%8C%2F%E8%B5%B7%E6%80%9D%E6%96%87%E7%AB%A0-02.png?alt=media&amp;token=6dd896bb-5ee1-4f56-9551-a3fbd724d011" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="勇敢選擇想過的人生：關於《每天寫，重新寫，寫到最後》我學到的五件事"/></a><div class="content"><a class="title" href="/2024/05/27/%E5%8B%87%E6%95%A2%E9%81%B8%E6%93%87%E6%83%B3%E9%81%8E%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%9A%E9%97%9C%E6%96%BC%E3%80%8A%E6%AF%8F%E5%A4%A9%E5%AF%AB%EF%BC%8C%E9%87%8D%E6%96%B0%E5%AF%AB%EF%BC%8C%E5%AF%AB%E5%88%B0%E6%9C%80%E5%BE%8C%E3%80%8B%E6%88%91%E5%AD%B8%E5%88%B0%E7%9A%84%E4%BA%94%E4%BB%B6%E4%BA%8B/" title="勇敢選擇想過的人生：關於《每天寫，重新寫，寫到最後》我學到的五件事">勇敢選擇想過的人生：關於《每天寫，重新寫，寫到最後》我學到的五件事</a><time datetime="2024-05-27T15:16:58.000Z" title="發表於 2024-05-27 23:16:58">2024-05-27</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 邵 SHAO</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主題 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="閱讀模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="淺色和深色模式轉換"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="設定"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目錄"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="返回頂部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.14.0-b3"></script><script src="/js/main.js?v=4.14.0-b3"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.35/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const runMermaid = (ele) => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from(ele).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+    
+    codeMermaidEle.forEach(ele => {
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.innerHTML = `<pre class="mermaid-src" hidden>${ele.textContent}</pre>`
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (false) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js').then(runMermaidFn)
+  }
+  
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

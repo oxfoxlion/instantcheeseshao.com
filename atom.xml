@@ -6,7 +6,7 @@
   <link href="https://oxfoxlion.github.io/atom.xml" rel="self"/>
   
   <link href="https://oxfoxlion.github.io/"/>
-  <updated>2024-08-05T16:07:12.845Z</updated>
+  <updated>2024-08-19T16:55:54.073Z</updated>
   <id>https://oxfoxlion.github.io/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>六角學院2024切版直播班心得</title>
+    <link href="https://oxfoxlion.github.io/2024/08/20/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A22024%E5%88%87%E7%89%88%E7%9B%B4%E6%92%AD%E7%8F%AD%E5%BF%83%E5%BE%97/"/>
+    <id>https://oxfoxlion.github.io/2024/08/20/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A22024%E5%88%87%E7%89%88%E7%9B%B4%E6%92%AD%E7%8F%AD%E5%BF%83%E5%BE%97/</id>
+    <published>2024-08-19T16:06:31.000Z</published>
+    <updated>2024-08-19T16:55:54.073Z</updated>
+    
+    <content type="html"><![CDATA[<p>我現在剛辦完線上Check In，48小時之後就要搭上飛機前往歐洲進行為期36天的自由行大冒險，明天一早還有很多行前預備的事項在等著我，人生第一次離開亞洲大陸，超級緊張的啦!!!</p><p>但我才剛剛寫完本屆切版直播班的第六和第七週主線任務，第八週主線任務至今尚未發布，看來是沒有機會完成了(回國之後再補寫!!!)。為了幫這一次的直播班留下一個完整的紀錄，雖然沒有強制我要寫這篇心得，我還是想要趕一下，把心得寫出來。</p><h2 id="報名原因"><a href="#報名原因" class="headerlink" title="報名原因"></a>報名原因</h2><p>我之前的<a href="https://instantcheeseshao.com/2024/06/06/%E9%9B%A2%E8%81%B7%E4%B8%80%E5%80%8B%E6%9C%88%E5%BE%8C%E7%B5%82%E6%96%BC%E9%96%8B%E5%A7%8B%E6%9C%9F%E5%BE%85%E6%AF%8F%E4%B8%80%E5%A4%A9%EF%BC%9A%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A22024%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%BF%83%E5%BE%97/">文章</a>中有提到我參加了今年六角學院舉辦的體驗營，接著我就報名了為期九個月的React工程師培訓班，而切版直播班是這個培訓班的第一波課程。</p><h2 id="我以為我做不到，其實我做得到"><a href="#我以為我做不到，其實我做得到" class="headerlink" title="我以為我做不到，其實我做得到"></a>我以為我做不到，其實我做得到</h2><p>其實體驗營進行到現在大概第7週而已，課程還沒結束，但我要提前先下課了QQ</p><p>回顧這7週，我發現在體驗營的時候主要都是學習html、css手刻網站的技巧，到了切版直播班開始使用Bootstrap這個css框架來切版，而其中最重要的原則就是1. 容器與內容分離、2. 結構與樣式分離，在寫Bootstrap的時候深刻的感受到了這一點，我的css內容越來越少了，取而代之的是套用在html標籤的class越來越多，但也感受到它的方便之處。</p><p>不過其實在一開始從手刻要跳到框架的時候，我發現我超級拖延的，可能是發現Bootstrap是一個全新的領域，讓我很不想面對又要從0開始學起的那種感覺。</p><p>但是看完了助教直播，聽到助教在影片當中不斷地強調可以翻手冊、不懂就去翻手冊，不需要背誦，讓我鬆了一口氣，所以就有比較勇敢地開始寫作業，也在不斷跟手冊對照的過程當中越來越熟悉Bootstrap的使用、檔案管理的方法等等。</p><p>我想我最大的收穫是「我以為我做不到，其實我做得到」，我在寫第六週作業的時候，先寫出了一個首頁，那個首頁的hover很簡單，只有變顏色而已，但我看到其他人的作業，hover的時候那個物件可以向上移動，或者是導覽列可以固定在視窗上方不會被滑掉，覺得大家怎麼都這麼厲害，當下其實有一點洩氣，後來寫著寫著突然想起前面的預習課程教過的GSAP和課程中有提到的position:fixed，實際去嘗試之後發現其實也沒有那麼難，原來我是做得到的，我只是還沒想到怎麼做而已。</p><p>想起之前上班的時候被要求0基礎硬幹Moodle系統也有得到類似的結論：所有的事情都有一個流程、方法，只是必須花時間去找出來並且執行而已。</p><h2 id="感謝"><a href="#感謝" class="headerlink" title="感謝"></a>感謝</h2><p>因為我是React班，所以我同時也在參與專題班的專題製作，因為擔心自己會雷到別人所以選擇了單人專題，很感謝我的教練阿蘇，除了專題上的指導之外也會給我學習上的建議和鼓勵。</p><p>另外也要謝謝也是單人專題組的同學Ya。喵跟我一起組隊完成每週的小組任務，在過程中給我很多主線任務上的建議。</p><p>謝謝助教們審核我的作業，也都超認真的回覆我，還沒有時間一一回去修正我的作業，但我希望之後還能利用空檔回去把功課修正(或至少做點筆記)，不然就太辜負助教們了。</p><p>我必須很自豪地說，雖然第三週跟第六週礙於時間關係沒辦法完成到最高等級，但我本來很擔心專題進度會跟不上，結果我不但有跟上專題進度、甚至完成了除了第八週以外的主線任務，小組任務也有完成，每日任務全部都有寫，真的是盡全力在享受整個課程，這都要感謝老師、教練、同學們和助教的幫助。</p><h2 id="希望自己可以加強的地方"><a href="#希望自己可以加強的地方" class="headerlink" title="希望自己可以加強的地方"></a>希望自己可以加強的地方</h2><p>這一次的切版班讓我更多感受到其實自己還有很多可以投入的時間，但卻沒有用在刀口上。</p><p>因為奧運的關係跑回去重看了一遍《第一神拳》…還花了很多時間躺在床上逃避功課，或是打開影片欺騙自己有在學習，實際上在嚕貓。</p><p>之後還有JS班和React班，希望自己可以學習把握時間，也要掌控好精神和體力。</p><p>這次很常跟教練討論到的就是，我很難記得去計算自己花了多久時間學習，但這其實是個蠻重要的數據，所以我也希望自己可以更懂得運用工具去記錄自己的學習時數。</p><p>以上就是我簡單的分享，因為出國的準備真的快弄不完了，就先停在這裡，謝謝大家的閱讀T^T回國之後再繼續努力吧</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;我現在剛辦完線上Check In，48小時之後就要搭上飛機前往歐洲進行為期36天的自由行大冒險，明天一早還有很多行前預備的事項在等著我，人生第一次離開亞洲大陸，超級緊張的啦!!!&lt;/p&gt;
+&lt;p&gt;但我才剛剛寫完本屆切版直播班的第六和第七週主線任務，第八週主線任務至今尚未發布，</summary>
+      
+    
+    
+    
+    <category term="網頁工程" scheme="https://oxfoxlion.github.io/categories/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/"/>
+    
+    <category term="學習心得" scheme="https://oxfoxlion.github.io/categories/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/%E5%AD%B8%E7%BF%92%E5%BF%83%E5%BE%97/"/>
+    
+    
+    <category term="六角學院" scheme="https://oxfoxlion.github.io/tags/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/"/>
+    
+    <category term="網頁工程" scheme="https://oxfoxlion.github.io/tags/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【Moodle管理者教學】維護成員資料：忘記密碼又沒收到認證信怎麼辦？</title>
     <link href="https://oxfoxlion.github.io/2024/06/24/%E3%80%90Moodle%E7%AE%A1%E7%90%86%E8%80%85%E6%95%99%E5%AD%B8%E3%80%91%E7%B6%AD%E8%AD%B7%E6%88%90%E5%93%A1%E8%B3%87%E6%96%99%EF%BC%9A%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%E5%8F%88%E6%B2%92%E6%94%B6%E5%88%B0%E8%AA%8D%E8%AD%89%E4%BF%A1%E6%80%8E%E9%BA%BC%E8%BE%A6%EF%BC%9F/"/>
     <id>https://oxfoxlion.github.io/2024/06/24/%E3%80%90Moodle%E7%AE%A1%E7%90%86%E8%80%85%E6%95%99%E5%AD%B8%E3%80%91%E7%B6%AD%E8%AD%B7%E6%88%90%E5%93%A1%E8%B3%87%E6%96%99%EF%BC%9A%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%E5%8F%88%E6%B2%92%E6%94%B6%E5%88%B0%E8%AA%8D%E8%AD%89%E4%BF%A1%E6%80%8E%E9%BA%BC%E8%BE%A6%EF%BC%9F/</id>
     <published>2024-06-24T15:27:50.000Z</published>
-    <updated>2024-08-05T16:07:12.845Z</updated>
+    <updated>2024-08-05T16:14:33.134Z</updated>
     
     <content type="html"><![CDATA[<p>最近有收到求救訊號，問我Moodle成員忘記密碼，但是點選忘記密碼的選項又沒有收到認證信件，該怎麼處理呢？所以我們今天就來談談如何進行成員資料的維護。</p><h2 id="成員資料維護路徑"><a href="#成員資料維護路徑" class="headerlink" title="成員資料維護路徑"></a>成員資料維護路徑</h2><p>如何找到你要維護資料的那名成員呢？</p><p>請在你的Moodle畫面上找到<strong>網站管理&gt;用戶&gt;瀏覽用戶清單&gt;透過過濾找到該名成員&gt;點選編修按鈕</strong></p><h3 id="1-點選網站管理"><a href="#1-點選網站管理" class="headerlink" title="1. 點選網站管理"></a>1. 點選網站管理</h3><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/Moodle%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%2F1.png?alt=media&token=4b431037-5765-4ca7-bf0a-8d2c7dc05c5a"></p><h3 id="2-點選用戶-瀏覽用戶清單"><a href="#2-點選用戶-瀏覽用戶清單" class="headerlink" title="2. 點選用戶&gt;瀏覽用戶清單"></a>2. 點選用戶&gt;瀏覽用戶清單</h3><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/Moodle%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%2F2.png?alt=media&token=6b3f000a-8023-4f8a-8922-6dbaefec4710"></p><h3 id="3-點選顯示更多選項，可以看到其他過濾的方式"><a href="#3-點選顯示更多選項，可以看到其他過濾的方式" class="headerlink" title="3. 點選顯示更多選項，可以看到其他過濾的方式"></a>3. 點選顯示更多選項，可以看到其他過濾的方式</h3><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/Moodle%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%2F3.png?alt=media&token=2ddaf661-3a0e-4939-b3a4-faaf01332e1a"><br><img src="http://instantcheeseshaocom.local/wp-content/uploads/2024/06/image-20.png"></p><h3 id="4-找到該名成員之後點選右手邊的齒輪就可以進到編修頁面囉"><a href="#4-找到該名成員之後點選右手邊的齒輪就可以進到編修頁面囉" class="headerlink" title="4. 找到該名成員之後點選右手邊的齒輪就可以進到編修頁面囉"></a>4. 找到該名成員之後點選右手邊的齒輪就可以進到編修頁面囉</h3><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/Moodle%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%2F5.png?alt=media&token=48524a33-d75c-4a52-b887-2c51b4dd7e16"></p><h3 id="5-看到這個畫面就表示有成功進到編修頁面了"><a href="#5-看到這個畫面就表示有成功進到編修頁面了" class="headerlink" title="5. 看到這個畫面就表示有成功進到編修頁面了"></a>5. 看到這個畫面就表示有成功進到編修頁面了</h3><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/Moodle%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%2F6.png?alt=media&token=5ee65688-d852-48e4-b298-d0efe97c5cc7"></p><p>進入到編修頁面之後，只要依據需要修改的部分作填寫，填寫完成按下<strong>更新個人資料</strong>或是<strong>Enter</strong>就可以囉。</p><h2 id="為什麼會沒有收到認證信"><a href="#為什麼會沒有收到認證信" class="headerlink" title="為什麼會沒有收到認證信"></a>為什麼會沒有收到認證信</h2><p>接下來我們稍微釐清一下成員點選忘記密碼，但是沒有收到認證信的原因。</p><p>我認為通常是以下2個原因：</p><ol><li>email填寫錯誤：很多人在註冊時填入了錯誤的email信箱，導致信件沒有送到。</li><li>信箱阻擋：可能信箱有設定信件阻擋以至於信件無法送到，可以請使用者先檢查系統信件是否被分類成垃圾信件。</li></ol><p>要如何拯救他的帳號呢？我提供下列兩個方法</p><h3 id="1-直接更改密碼"><a href="#1-直接更改密碼" class="headerlink" title="1. 直接更改密碼"></a>1. 直接更改密碼</h3><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/Moodle%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%2F7.png?alt=media&token=490c4997-8366-4ded-86c0-ed57cb99c148"></p><p>在新密碼這個區塊，可以協助他更新一個臨時密碼，請務必記得勾選強制變更密碼，這樣他使用你發給的臨時密碼登入後，必須要更新密碼才可以繼續使用Moodle系統，可以確保他的帳號安全。</p><p>請注意：設定臨時密碼時也需要同時具備<strong>大小寫英文字母、數字、特殊符號</strong>喔。(臨時密碼可以設得比較簡單，比方說 Abcd1234@ )</p><h3 id="2-協助更改Email信箱位址"><a href="#2-協助更改Email信箱位址" class="headerlink" title="2. 協助更改Email信箱位址"></a>2. 協助更改Email信箱位址</h3><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/Moodle%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%2F8.png?alt=media&token=0f6aa704-ddc1-4a52-9471-095aa946be01"></p><p>在姓名的下面有一個電子郵件信箱，你可以幫他檢查是否有輸入錯誤，假如是錯誤的，就幫他改成正確的，再請他重新以<strong>忘記密碼</strong>的方式找回密碼。</p><p>假如信箱是正確的，那就需要請對方檢查一下自己的信件阻擋設定了，所以我建議是兩種方法同時使用。</p><p>先發給一個臨時密碼，讓他可以進入系統，另外也幫他確認電子郵件信箱是否正確，好讓他下次可以順利收到系統信件。</p><p>那我們今天就先談到這邊，如果還有其他Moodle系統問題，歡迎點選下方連結或掃描QRcode加入我們的Moodle交流社群，這是一個非官方的交流社群，可以在裡面討論Moodle相關的問題哦!! 那我們下次見!!</p><div><a style="display:block;color:white;background:#177269;padding:10px;width:150px;text-align:center;border-radius:4px;margin:0 auto;" href="https://line.me/ti/g2/_APBIHZO67AdCDyvfj5aDYi5DguA_6ODOvBltw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" >加入Line社群</a></div><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/Moodle%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%2Fimage-25.png?alt=media&token=b1acff11-3fad-47ac-b53c-46c03ff98907"></p>]]></content>
     
@@ -39,11 +68,11 @@
     <category term="Moodle" scheme="https://oxfoxlion.github.io/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E5%AD%B8/Moodle/"/>
     
     
+    <category term="網頁工程" scheme="https://oxfoxlion.github.io/tags/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/"/>
+    
     <category term="Moodle" scheme="https://oxfoxlion.github.io/tags/Moodle/"/>
     
     <category term="教學" scheme="https://oxfoxlion.github.io/tags/%E6%95%99%E5%AD%B8/"/>
-    
-    <category term="網站工程" scheme="https://oxfoxlion.github.io/tags/%E7%B6%B2%E7%AB%99%E5%B7%A5%E7%A8%8B/"/>
     
   </entry>
   
@@ -192,15 +221,15 @@
     <category term="學習筆記" scheme="https://oxfoxlion.github.io/categories/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/"/>
     
     
+    <category term="Codepen" scheme="https://oxfoxlion.github.io/tags/Codepen/"/>
+    
+    <category term="CSS" scheme="https://oxfoxlion.github.io/tags/CSS/"/>
+    
     <category term="HTML" scheme="https://oxfoxlion.github.io/tags/HTML/"/>
     
     <category term="六角學院" scheme="https://oxfoxlion.github.io/tags/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/"/>
     
     <category term="網頁工程" scheme="https://oxfoxlion.github.io/tags/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/"/>
-    
-    <category term="Codepen" scheme="https://oxfoxlion.github.io/tags/Codepen/"/>
-    
-    <category term="CSS" scheme="https://oxfoxlion.github.io/tags/CSS/"/>
     
   </entry>
   

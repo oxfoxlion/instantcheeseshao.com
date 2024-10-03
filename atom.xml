@@ -6,7 +6,7 @@
   <link href="https://oxfoxlion.github.io/atom.xml" rel="self"/>
   
   <link href="https://oxfoxlion.github.io/"/>
-  <updated>2024-08-19T16:55:54.073Z</updated>
+  <updated>2024-10-03T08:11:54.186Z</updated>
   <id>https://oxfoxlion.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript學習筆記1-什麼是變數?變數的命名與型別重點</title>
+    <link href="https://oxfoxlion.github.io/2024/10/03/JavaScript%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%981-%E4%BB%80%E9%BA%BC%E6%98%AF%E8%AE%8A%E6%95%B8-%E8%AE%8A%E6%95%B8%E7%9A%84%E5%91%BD%E5%90%8D%E8%88%87%E5%9E%8B%E5%88%A5%E9%87%8D%E9%BB%9E/"/>
+    <id>https://oxfoxlion.github.io/2024/10/03/JavaScript%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%981-%E4%BB%80%E9%BA%BC%E6%98%AF%E8%AE%8A%E6%95%B8-%E8%AE%8A%E6%95%B8%E7%9A%84%E5%91%BD%E5%90%8D%E8%88%87%E5%9E%8B%E5%88%A5%E9%87%8D%E9%BB%9E/</id>
+    <published>2024-10-03T06:06:02.000Z</published>
+    <updated>2024-10-03T08:11:54.186Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="JavaScript簡介"><a href="#JavaScript簡介" class="headerlink" title="JavaScript簡介"></a>JavaScript簡介</h2><p>我們在前面的文章中有提到HTML用於建立網站的骨架，CSS則是網站的裝潢，今天要說的這個JavaScript則是用於在網站中添加互動性的元素。</p><p>舉例來說，迪士尼樂園裡面有一個料理鼠王的設施，有點類似旋轉咖啡杯，但是它會帶你深入料理鼠王的場景，當你搭乘旋轉咖啡杯抵達指定空間時，眼前的大銀幕就會開始演出小米在廚房中四處逃竄躲避廚師的畫面，而當你移動到另外一個房間，天花板上的灑水設備則會自動啟動朝你噴水，模擬小米被水噴到的體驗。</p><p>JavaScript的作用就像這個場景，在網站中的某個指定部分觸發互動效果，讓網站不僅是靜態的展示，而是有更多動態與互動的功能。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/JavaScript1%2FIMG_4243.JPEG?alt=media&token=f17fee88-bf09-4280-80bb-41f90dd552f0"></p><h2 id="什麼是變數"><a href="#什麼是變數" class="headerlink" title="什麼是變數"></a>什麼是變數</h2><p>「變數」在生活中常被用在那些可能會產生變化、或是難以預測的事情上面，如果我今天說「這個活動可能會有變數」，意思是活動可能會暫停、取消或是改期等等，因為有可能不同於原本的計畫，我們就會稱為變數，與那些不會改變的事物做一個對比。</p><p>舉例來說舉辦一個活動可能會遇到不同的天候狀況，不同的天候狀況則會使決策團隊決定出不同的結果：晴天的時候我們在草地上進行，雨天的時候則在室內進行，颱風天就取消活動，因此我們就可以將天候狀況制定為一個變數，根據變數改變，我們去制定出一個規則並導出結果，而這個規則就是函式。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/JavaScript1%2F%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202024-10-03%20144052.png?alt=media&token=c7621c61-8d3e-49b0-8d33-3bd6055d05e7"></p><p>在JavaScript中，可以想像變數就是一個被貼有標籤的資料夾，必須要先去為這個資料夾命名，接著才去放裡面的資料。以天候狀況來說，我們先拿出一個資料夾，命名為天氣，接著在裡面放入寫有當天的天氣的小卡，也就是值(Value)，好讓函式根據這個值去判斷活動該如何進行。</p><p>接下來我們就示範一下如何制定變數，而函數我們留到下一次再來討論。</p><h2 id="如何宣告變數"><a href="#如何宣告變數" class="headerlink" title="如何宣告變數"></a>如何宣告變數</h2><p>在JavaScript當中主要有三個方式可以宣告變數(為變數資料夾命名)：</p><ol><li><p>let ： 宣告變數之後可以去修改變數的值，類似一個可以隨時替換內容的資料夾，比方說天氣可能一開始是晴天，後來變成雨天了。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> weather = <span class="string">&#x27;sun&#x27;</span>;</span><br><span class="line">weather = <span class="string">&#x27;rain&#x27;</span>;</span><br></pre></td></tr></table></figure></li><li><p>const ：宣告變數之後就不能夠修改，類似一個上鎖的資料夾，所以通常會放一些比較不會更動的資料，比方說太陽只有一個，或者是披薩的價錢。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> sun = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">const</span> pizzaPrice = <span class="number">120</span>;</span><br></pre></td></tr></table></figure></li><li><p>var ： 宣告變數之後可以修改，也可以重新命名變數，擁有非常大的彈性，但是越來越少瀏覽器支援了。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> num = <span class="number">2</span>;</span><br></pre></td></tr></table></figure></li></ol><h2 id="變數的命名原則"><a href="#變數的命名原則" class="headerlink" title="變數的命名原則"></a>變數的命名原則</h2><p>在命名變數時，有一些需要遵守的規則，我在這邊列出來：</p><ul><li>不可以使用數字作為開頭。</li><li>不可以使用系統保留字，比方說let、const、var。</li><li>大小寫視為不同的變數</li><li>底線與美元符號可以作為開頭或放置於文字中間</li><li>文字中間不可以使用空白或是特殊字元</li></ul><h2 id="變數的型別"><a href="#變數的型別" class="headerlink" title="變數的型別"></a>變數的型別</h2><p>型別也就是資料的類型，舉例來說，我們存放在電腦資料夾裡的東西可能有圖片檔、文件檔、壓縮檔等不同類別的檔案，變數也有幾種不同的類型，主要分成兩大類，八小類：</p><h3 id="第一大類：原始型別"><a href="#第一大類：原始型別" class="headerlink" title="第一大類：原始型別"></a>第一大類：原始型別</h3><ul><li>Number：顧名思義就是數字，包含了小數、負數</li><li>String：字串，也就是文字，以<code>&#39;單引號&#39;</code>或<code>&quot;雙引號&quot;</code>將文字內容包裹起來</li><li>Boolean：不是哥布林的布林，而是是非題，也就是true或false</li><li>Undefined：當我們定義了一個變數，卻沒有給變數一個值的時候，就會顯示undefined，表示未被賦值</li><li>Null：有被賦值，但是被賦予的是空值，就會顯示Null</li></ul><h3 id="第二大類：物件型別"><a href="#第二大類：物件型別" class="headerlink" title="第二大類：物件型別"></a>第二大類：物件型別</h3><ul><li>Array：陣列，以中括號紀錄多筆資料如下<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>];</span><br></pre></td></tr></table></figure></li><li>Object：物件，以大括號紀錄多筆帶有屬性的資料如下<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj = &#123;</span><br><span class="line">    name = <span class="string">&#x27;Shao&#x27;</span>,</span><br><span class="line">    age = <span class="number">27</span>,</span><br><span class="line">    cats = <span class="number">2</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><p>講到這邊，差不多就可以來練習宣告一些變數，並賦予不同的型別了，後面我們再繼續談不同型別在運算上有哪些差異，那今天的筆記就先到這邊囉</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;JavaScript簡介&quot;&gt;&lt;a href=&quot;#JavaScript簡介&quot; class=&quot;headerlink&quot; title=&quot;JavaScript簡介&quot;&gt;&lt;/a&gt;JavaScript簡介&lt;/h2&gt;&lt;p&gt;我們在前面的文章中有提到HTML用於建立網站的骨架，CSS則</summary>
+      
+    
+    
+    
+    <category term="網頁工程" scheme="https://oxfoxlion.github.io/categories/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/"/>
+    
+    <category term="學習筆記" scheme="https://oxfoxlion.github.io/categories/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="Codepen" scheme="https://oxfoxlion.github.io/tags/Codepen/"/>
+    
+    <category term="JavaScript" scheme="https://oxfoxlion.github.io/tags/JavaScript/"/>
+    
+    <category term="六角學院" scheme="https://oxfoxlion.github.io/tags/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/"/>
+    
+    <category term="網頁工程" scheme="https://oxfoxlion.github.io/tags/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>六角學院2024切版直播班心得</title>
@@ -99,11 +131,11 @@
     <category term="學習筆記" scheme="https://oxfoxlion.github.io/categories/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/"/>
     
     
-    <category term="HTML" scheme="https://oxfoxlion.github.io/tags/HTML/"/>
-    
     <category term="六角學院" scheme="https://oxfoxlion.github.io/tags/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/"/>
     
     <category term="網頁工程" scheme="https://oxfoxlion.github.io/tags/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/"/>
+    
+    <category term="HTML" scheme="https://oxfoxlion.github.io/tags/HTML/"/>
     
   </entry>
   
@@ -223,13 +255,13 @@
     
     <category term="Codepen" scheme="https://oxfoxlion.github.io/tags/Codepen/"/>
     
-    <category term="CSS" scheme="https://oxfoxlion.github.io/tags/CSS/"/>
-    
-    <category term="HTML" scheme="https://oxfoxlion.github.io/tags/HTML/"/>
-    
     <category term="六角學院" scheme="https://oxfoxlion.github.io/tags/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/"/>
     
     <category term="網頁工程" scheme="https://oxfoxlion.github.io/tags/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/"/>
+    
+    <category term="CSS" scheme="https://oxfoxlion.github.io/tags/CSS/"/>
+    
+    <category term="HTML" scheme="https://oxfoxlion.github.io/tags/HTML/"/>
     
   </entry>
   

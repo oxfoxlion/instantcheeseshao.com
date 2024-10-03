@@ -1,0 +1,274 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>JavaScript學習筆記1-什麼是變數?變數的命名與型別重點 | 即溶啟思</title><meta name="author" content="邵 SHAO"><meta name="copyright" content="邵 SHAO"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="JavaScript簡介我們在前面的文章中有提到HTML用於建立網站的骨架，CSS則是網站的裝潢，今天要說的這個JavaScript則是用於在網站中添加互動性的元素。 舉例來說，迪士尼樂園裡面有一個料理鼠王的設施，有點類似旋轉咖啡杯，但是它會帶你深入料理鼠王的場景，當你搭乘旋轉咖啡杯抵達指定空間時，眼前的大銀幕就會開始演出小米在廚房中四處逃竄躲避廚師的畫面，而當你移動到另外一個房間，天花板上的灑水">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript學習筆記1-什麼是變數?變數的命名與型別重點">
+<meta property="og:url" content="https://oxfoxlion.github.io/2024/10/03/JavaScript%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%981-%E4%BB%80%E9%BA%BC%E6%98%AF%E8%AE%8A%E6%95%B8-%E8%AE%8A%E6%95%B8%E7%9A%84%E5%91%BD%E5%90%8D%E8%88%87%E5%9E%8B%E5%88%A5%E9%87%8D%E9%BB%9E/index.html">
+<meta property="og:site_name" content="即溶啟思">
+<meta property="og:description" content="JavaScript簡介我們在前面的文章中有提到HTML用於建立網站的骨架，CSS則是網站的裝潢，今天要說的這個JavaScript則是用於在網站中添加互動性的元素。 舉例來說，迪士尼樂園裡面有一個料理鼠王的設施，有點類似旋轉咖啡杯，但是它會帶你深入料理鼠王的場景，當你搭乘旋轉咖啡杯抵達指定空間時，眼前的大銀幕就會開始演出小米在廚房中四處逃竄躲避廚師的畫面，而當你移動到另外一個房間，天花板上的灑水">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/JavaScript1%2FDALL%C2%B7E%202024-10-03%2016.10.55%20-%20A%20notebook-style%20cover%20design%20for%20'JavaScript%20Learning%20Notes'%2C%20featuring%20the%20title%20handwritten%20in%20a%20casual%2C%20personal%20notebook%20style%20at%20the%20center.%20The.webp?alt=media&token=d7c168eb-d4a5-4187-9e25-766f4de88474">
+<meta property="article:published_time" content="2024-10-03T06:06:02.000Z">
+<meta property="article:modified_time" content="2024-10-03T08:11:54.186Z">
+<meta property="article:author" content="邵 SHAO">
+<meta property="article:tag" content="Codepen">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="六角學院">
+<meta property="article:tag" content="網頁工程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/JavaScript1%2FDALL%C2%B7E%202024-10-03%2016.10.55%20-%20A%20notebook-style%20cover%20design%20for%20'JavaScript%20Learning%20Notes'%2C%20featuring%20the%20title%20handwritten%20in%20a%20casual%2C%20personal%20notebook%20style%20at%20the%20center.%20The.webp?alt=media&token=d7c168eb-d4a5-4187-9e25-766f4de88474"><link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E5%8D%B3%E6%BA%B6%E8%B5%B7%E6%80%9D%E9%A0%BB%E9%81%930226_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.jpg?alt=media&token=238c8da3-4caf-4633-8ff0-02a758815f9f"><link rel="canonical" href="https://oxfoxlion.github.io/2024/10/03/JavaScript%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%981-%E4%BB%80%E9%BA%BC%E6%98%AF%E8%AE%8A%E6%95%B8-%E8%AE%8A%E6%95%B8%E7%9A%84%E5%91%BD%E5%90%8D%E8%88%87%E5%9E%8B%E5%88%A5%E9%87%8D%E9%BB%9E/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.14.0-b3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.35/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>(()=>{
+      const saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+      
+      window.btf = {
+        saveToLocal: saveToLocal,
+        getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+          script.src = url
+          script.async = true
+          script.onerror = reject
+          script.onload = script.onreadystatechange = function() {
+            const loadState = this.readyState
+            if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+            script.onload = script.onreadystatechange = null
+            resolve()
+          }
+
+          Object.keys(attr).forEach(key => {
+            script.setAttribute(key, attr[key])
+          })
+
+          document.head.appendChild(script)
+        }),
+
+        getCSS: (url, id = false) => new Promise((resolve, reject) => {
+          const link = document.createElement('link')
+          link.rel = 'stylesheet'
+          link.href = url
+          if (id) link.id = id
+          link.onerror = reject
+          link.onload = link.onreadystatechange = function() {
+            const loadState = this.readyState
+            if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+            link.onload = link.onreadystatechange = null
+            resolve()
+          }
+          document.head.appendChild(link)
+        }),
+
+        addGlobalFn: (key, fn, name = false, parent = window) => {
+          const pjaxEnable = false
+          if (!pjaxEnable && key.startsWith('pjax')) return
+
+          const globalFn = parent.globalFn || {}
+          const keyObj = globalFn[key] || {}
+    
+          if (name && keyObj[name]) return
+    
+          name = name || Object.keys(keyObj).length
+          keyObj[name] = fn
+          globalFn[key] = keyObj
+          parent.globalFn = globalFn
+        }
+      }
+    
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+      
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })()</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":true,"highlightMacStyle":false},
+  copy: {
+    success: '複製成功',
+    error: '複製錯誤',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '載入更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'JavaScript學習筆記1-什麼是變數?變數的命名與型別重點',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-10-03 16:11:54'
+}</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="即溶啟思" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://gravatar.com/userimage/249589667/5fe7b02aef00ead31e296938b8d87bb8.jpeg?size=256" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">8</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> Home</span></a></div><div class="menus_item"><span class="site-page group"><span> 閱讀筆記</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98/%E6%96%87%E5%AD%B8%E5%B0%8F%E8%AA%AA/"><span> 文學小說</span></a></li><li><a class="site-page child" href="/categories/%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98/%E5%80%8B%E4%BA%BA%E6%88%90%E9%95%B7/"><span> 個人成長</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 網頁工程</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/%E5%AD%B8%E7%BF%92%E5%BF%83%E5%BE%97/"><span> 學習心得</span></a></li><li><a class="site-page child" href="/categories/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/"><span> 學習筆記</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 工具教學</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E5%AD%B8/Moodle/"><span> Moodle教學</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="即溶啟思"><img class="site-icon" src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E5%8D%B3%E6%BA%B6%E8%B5%B7%E6%80%9D%E9%A0%BB%E9%81%930226_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.jpg?alt=media&amp;token=238c8da3-4caf-4633-8ff0-02a758815f9f" alt="Logo"/><span class="site-name">即溶啟思</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> Home</span></a></div><div class="menus_item"><span class="site-page group"><span> 閱讀筆記</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98/%E6%96%87%E5%AD%B8%E5%B0%8F%E8%AA%AA/"><span> 文學小說</span></a></li><li><a class="site-page child" href="/categories/%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98/%E5%80%8B%E4%BA%BA%E6%88%90%E9%95%B7/"><span> 個人成長</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 網頁工程</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/%E5%AD%B8%E7%BF%92%E5%BF%83%E5%BE%97/"><span> 學習心得</span></a></li><li><a class="site-page child" href="/categories/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/"><span> 學習筆記</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 工具教學</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E5%AD%B8/Moodle/"><span> Moodle教學</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">JavaScript學習筆記1-什麼是變數?變數的命名與型別重點</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">發表於</span><time class="post-meta-date-created" datetime="2024-10-03T06:06:02.000Z" title="發表於 2024-10-03 14:06:02">2024-10-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新於</span><time class="post-meta-date-updated" datetime="2024-10-03T08:11:54.186Z" title="更新於 2024-10-03 16:11:54">2024-10-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/">網頁工程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/">學習筆記</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="JavaScript學習筆記1-什麼是變數?變數的命名與型別重點"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">閱讀量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><h2 id="JavaScript簡介"><a href="#JavaScript簡介" class="headerlink" title="JavaScript簡介"></a>JavaScript簡介</h2><p>我們在前面的文章中有提到HTML用於建立網站的骨架，CSS則是網站的裝潢，今天要說的這個JavaScript則是用於在網站中添加互動性的元素。</p>
+<p>舉例來說，迪士尼樂園裡面有一個料理鼠王的設施，有點類似旋轉咖啡杯，但是它會帶你深入料理鼠王的場景，當你搭乘旋轉咖啡杯抵達指定空間時，眼前的大銀幕就會開始演出小米在廚房中四處逃竄躲避廚師的畫面，而當你移動到另外一個房間，天花板上的灑水設備則會自動啟動朝你噴水，模擬小米被水噴到的體驗。</p>
+<p>JavaScript的作用就像這個場景，在網站中的某個指定部分觸發互動效果，讓網站不僅是靜態的展示，而是有更多動態與互動的功能。</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/JavaScript1%2FIMG_4243.JPEG?alt=media&token=f17fee88-bf09-4280-80bb-41f90dd552f0"></p>
+<h2 id="什麼是變數"><a href="#什麼是變數" class="headerlink" title="什麼是變數"></a>什麼是變數</h2><p>「變數」在生活中常被用在那些可能會產生變化、或是難以預測的事情上面，如果我今天說「這個活動可能會有變數」，意思是活動可能會暫停、取消或是改期等等，因為有可能不同於原本的計畫，我們就會稱為變數，與那些不會改變的事物做一個對比。</p>
+<p>舉例來說舉辦一個活動可能會遇到不同的天候狀況，不同的天候狀況則會使決策團隊決定出不同的結果：晴天的時候我們在草地上進行，雨天的時候則在室內進行，颱風天就取消活動，因此我們就可以將天候狀況制定為一個變數，根據變數改變，我們去制定出一個規則並導出結果，而這個規則就是函式。</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/JavaScript1%2F%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202024-10-03%20144052.png?alt=media&token=c7621c61-8d3e-49b0-8d33-3bd6055d05e7"></p>
+<p>在JavaScript中，可以想像變數就是一個被貼有標籤的資料夾，必須要先去為這個資料夾命名，接著才去放裡面的資料。以天候狀況來說，我們先拿出一個資料夾，命名為天氣，接著在裡面放入寫有當天的天氣的小卡，也就是值(Value)，好讓函式根據這個值去判斷活動該如何進行。</p>
+<p>接下來我們就示範一下如何制定變數，而函數我們留到下一次再來討論。</p>
+<h2 id="如何宣告變數"><a href="#如何宣告變數" class="headerlink" title="如何宣告變數"></a>如何宣告變數</h2><p>在JavaScript當中主要有三個方式可以宣告變數(為變數資料夾命名)：</p>
+<ol>
+<li><p>let ： 宣告變數之後可以去修改變數的值，類似一個可以隨時替換內容的資料夾，比方說天氣可能一開始是晴天，後來變成雨天了。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> weather = <span class="string">&#x27;sun&#x27;</span>;</span><br><span class="line">weather = <span class="string">&#x27;rain&#x27;</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>const ：宣告變數之後就不能夠修改，類似一個上鎖的資料夾，所以通常會放一些比較不會更動的資料，比方說太陽只有一個，或者是披薩的價錢。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> sun = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">const</span> pizzaPrice = <span class="number">120</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>var ： 宣告變數之後可以修改，也可以重新命名變數，擁有非常大的彈性，但是越來越少瀏覽器支援了。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> num = <span class="number">2</span>;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="變數的命名原則"><a href="#變數的命名原則" class="headerlink" title="變數的命名原則"></a>變數的命名原則</h2><p>在命名變數時，有一些需要遵守的規則，我在這邊列出來：</p>
+<ul>
+<li>不可以使用數字作為開頭。</li>
+<li>不可以使用系統保留字，比方說let、const、var。</li>
+<li>大小寫視為不同的變數</li>
+<li>底線與美元符號可以作為開頭或放置於文字中間</li>
+<li>文字中間不可以使用空白或是特殊字元</li>
+</ul>
+<h2 id="變數的型別"><a href="#變數的型別" class="headerlink" title="變數的型別"></a>變數的型別</h2><p>型別也就是資料的類型，舉例來說，我們存放在電腦資料夾裡的東西可能有圖片檔、文件檔、壓縮檔等不同類別的檔案，變數也有幾種不同的類型，主要分成兩大類，八小類：</p>
+<h3 id="第一大類：原始型別"><a href="#第一大類：原始型別" class="headerlink" title="第一大類：原始型別"></a>第一大類：原始型別</h3><ul>
+<li>Number：顧名思義就是數字，包含了小數、負數</li>
+<li>String：字串，也就是文字，以<code>&#39;單引號&#39;</code>或<code>&quot;雙引號&quot;</code>將文字內容包裹起來</li>
+<li>Boolean：不是哥布林的布林，而是是非題，也就是true或false</li>
+<li>Undefined：當我們定義了一個變數，卻沒有給變數一個值的時候，就會顯示undefined，表示未被賦值</li>
+<li>Null：有被賦值，但是被賦予的是空值，就會顯示Null</li>
+</ul>
+<h3 id="第二大類：物件型別"><a href="#第二大類：物件型別" class="headerlink" title="第二大類：物件型別"></a>第二大類：物件型別</h3><ul>
+<li>Array：陣列，以中括號紀錄多筆資料如下<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>];</span><br></pre></td></tr></table></figure></li>
+<li>Object：物件，以大括號紀錄多筆帶有屬性的資料如下<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj = &#123;</span><br><span class="line">    name = <span class="string">&#x27;Shao&#x27;</span>,</span><br><span class="line">    age = <span class="number">27</span>,</span><br><span class="line">    cats = <span class="number">2</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>講到這邊，差不多就可以來練習宣告一些變數，並賦予不同的型別了，後面我們再繼續談不同型別在運算上有哪些差異，那今天的筆記就先到這邊囉</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Codepen/">Codepen</a><a class="post-meta__tags" href="/tags/JavaScript/">JavaScript</a><a class="post-meta__tags" href="/tags/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/">六角學院</a><a class="post-meta__tags" href="/tags/%E7%B6%B2%E9%A0%81%E5%B7%A5%E7%A8%8B/">網頁工程</a></div><div class="post_share"><div class="social-share" data-image="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/JavaScript1%2FDALL%C2%B7E%202024-10-03%2016.10.55%20-%20A%20notebook-style%20cover%20design%20for%20'JavaScript%20Learning%20Notes'%2C%20featuring%20the%20title%20handwritten%20in%20a%20casual%2C%20personal%20notebook%20style%20at%20the%20center.%20The.webp?alt=media&amp;token=d7c168eb-d4a5-4187-9e25-766f4de88474" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2024/08/20/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A22024%E5%88%87%E7%89%88%E7%9B%B4%E6%92%AD%E7%8F%AD%E5%BF%83%E5%BE%97/" title="六角學院2024切版直播班心得"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">六角學院2024切版直播班心得</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相關推薦</span></div><div class="relatedPosts-list"><div><a href="/2024/05/21/%E3%80%90%E5%89%8D%E7%AB%AF%E6%96%B0%E6%89%8B%E7%AD%86%E8%A8%98%E3%80%911-%E4%BB%80%E9%BA%BC%E6%98%AFHTML%EF%BC%9F%E4%BB%80%E9%BA%BC%E6%98%AFCSS%EF%BC%9F%E4%BD%BF%E7%94%A8CodePen%E9%AB%94%E9%A9%97%E6%92%B0%E5%AF%AB%E7%B6%B2%E7%AB%99%E5%90%A7%EF%BC%81/" title="【前端新手筆記】1-什麼是HTML？什麼是CSS？使用CodePen體驗撰寫網站吧！"><img class="cover" src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BB%80%E9%BA%BC%E6%98%AFHTML%E3%80%81CSS%2F1.jpg?alt=media&token=1181bfd4-543c-4f4d-b250-33fcdeedf747" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-05-21</div><div class="title">【前端新手筆記】1-什麼是HTML？什麼是CSS？使用CodePen體驗撰寫網站吧！</div></div></a></div><div><a href="/2024/06/14/%E3%80%90%E5%89%8D%E7%AB%AF%E6%96%B0%E6%89%8B%E7%AD%86%E8%A8%98%E3%80%912-HTML%E5%B8%B8%E7%94%A8%E6%A8%99%E7%B1%A4/" title="【前端新手筆記】2-HTML常用標籤"><img class="cover" src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/html%E6%A8%99%E7%B1%A4%2F%E8%B5%B7%E6%80%9D%E6%96%87%E7%AB%A0_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F-1-2.jpg?alt=media&token=87ed38ac-8343-48a4-9b4b-4eedea8e0bc3" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-14</div><div class="title">【前端新手筆記】2-HTML常用標籤</div></div></a></div><div><a href="/2024/08/20/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A22024%E5%88%87%E7%89%88%E7%9B%B4%E6%92%AD%E7%8F%AD%E5%BF%83%E5%BE%97/" title="六角學院2024切版直播班心得"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-08-20</div><div class="title">六角學院2024切版直播班心得</div></div></a></div><div><a href="/2024/06/06/%E9%9B%A2%E8%81%B7%E4%B8%80%E5%80%8B%E6%9C%88%E5%BE%8C%E7%B5%82%E6%96%BC%E9%96%8B%E5%A7%8B%E6%9C%9F%E5%BE%85%E6%AF%8F%E4%B8%80%E5%A4%A9%EF%BC%9A%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A22024%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%BF%83%E5%BE%97/" title="離職一個月後終於開始期待每一天：六角學院2024工程師體驗營心得"><img class="cover" src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B5%B7%E6%80%9D%E6%96%87%E7%AB%A0_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.jpg?alt=media&token=ce64c145-2652-4198-91f8-62ae9f2d4d64" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-06</div><div class="title">離職一個月後終於開始期待每一天：六角學院2024工程師體驗營心得</div></div></a></div><div><a href="/2024/06/24/%E3%80%90Moodle%E7%AE%A1%E7%90%86%E8%80%85%E6%95%99%E5%AD%B8%E3%80%91%E7%B6%AD%E8%AD%B7%E6%88%90%E5%93%A1%E8%B3%87%E6%96%99%EF%BC%9A%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%E5%8F%88%E6%B2%92%E6%94%B6%E5%88%B0%E8%AA%8D%E8%AD%89%E4%BF%A1%E6%80%8E%E9%BA%BC%E8%BE%A6%EF%BC%9F/" title="【Moodle管理者教學】維護成員資料：忘記密碼又沒收到認證信怎麼辦？"><img class="cover" src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/Moodle%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%2F%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F-1-1-scaled.jpg?alt=media&token=405e2722-52ae-433e-8e97-e987bc498288" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-24</div><div class="title">【Moodle管理者教學】維護成員資料：忘記密碼又沒收到認證信怎麼辦？</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://gravatar.com/userimage/249589667/5fe7b02aef00ead31e296938b8d87bb8.jpeg?size=256" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">邵 SHAO</div><div class="author-info__description">喜歡閱讀、分享，我在這裡練習用最簡單的方式，分享啟發思考的知識。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">8</div></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目錄</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript%E7%B0%A1%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text">JavaScript簡介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E9%BA%BC%E6%98%AF%E8%AE%8A%E6%95%B8"><span class="toc-number">2.</span> <span class="toc-text">什麼是變數</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%AE%A3%E5%91%8A%E8%AE%8A%E6%95%B8"><span class="toc-number">3.</span> <span class="toc-text">如何宣告變數</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%8A%E6%95%B8%E7%9A%84%E5%91%BD%E5%90%8D%E5%8E%9F%E5%89%87"><span class="toc-number">4.</span> <span class="toc-text">變數的命名原則</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%8A%E6%95%B8%E7%9A%84%E5%9E%8B%E5%88%A5"><span class="toc-number">5.</span> <span class="toc-text">變數的型別</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E5%A4%A7%E9%A1%9E%EF%BC%9A%E5%8E%9F%E5%A7%8B%E5%9E%8B%E5%88%A5"><span class="toc-number">5.1.</span> <span class="toc-text">第一大類：原始型別</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E5%A4%A7%E9%A1%9E%EF%BC%9A%E7%89%A9%E4%BB%B6%E5%9E%8B%E5%88%A5"><span class="toc-number">5.2.</span> <span class="toc-text">第二大類：物件型別</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/10/03/JavaScript%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%981-%E4%BB%80%E9%BA%BC%E6%98%AF%E8%AE%8A%E6%95%B8-%E8%AE%8A%E6%95%B8%E7%9A%84%E5%91%BD%E5%90%8D%E8%88%87%E5%9E%8B%E5%88%A5%E9%87%8D%E9%BB%9E/" title="JavaScript學習筆記1-什麼是變數?變數的命名與型別重點"><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/JavaScript1%2FDALL%C2%B7E%202024-10-03%2016.10.55%20-%20A%20notebook-style%20cover%20design%20for%20'JavaScript%20Learning%20Notes'%2C%20featuring%20the%20title%20handwritten%20in%20a%20casual%2C%20personal%20notebook%20style%20at%20the%20center.%20The.webp?alt=media&amp;token=d7c168eb-d4a5-4187-9e25-766f4de88474" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JavaScript學習筆記1-什麼是變數?變數的命名與型別重點"/></a><div class="content"><a class="title" href="/2024/10/03/JavaScript%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%981-%E4%BB%80%E9%BA%BC%E6%98%AF%E8%AE%8A%E6%95%B8-%E8%AE%8A%E6%95%B8%E7%9A%84%E5%91%BD%E5%90%8D%E8%88%87%E5%9E%8B%E5%88%A5%E9%87%8D%E9%BB%9E/" title="JavaScript學習筆記1-什麼是變數?變數的命名與型別重點">JavaScript學習筆記1-什麼是變數?變數的命名與型別重點</a><time datetime="2024-10-03T06:06:02.000Z" title="發表於 2024-10-03 14:06:02">2024-10-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/08/20/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A22024%E5%88%87%E7%89%88%E7%9B%B4%E6%92%AD%E7%8F%AD%E5%BF%83%E5%BE%97/" title="六角學院2024切版直播班心得">六角學院2024切版直播班心得</a><time datetime="2024-08-19T16:06:31.000Z" title="發表於 2024-08-20 00:06:31">2024-08-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/06/24/%E3%80%90Moodle%E7%AE%A1%E7%90%86%E8%80%85%E6%95%99%E5%AD%B8%E3%80%91%E7%B6%AD%E8%AD%B7%E6%88%90%E5%93%A1%E8%B3%87%E6%96%99%EF%BC%9A%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%E5%8F%88%E6%B2%92%E6%94%B6%E5%88%B0%E8%AA%8D%E8%AD%89%E4%BF%A1%E6%80%8E%E9%BA%BC%E8%BE%A6%EF%BC%9F/" title="【Moodle管理者教學】維護成員資料：忘記密碼又沒收到認證信怎麼辦？"><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/Moodle%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%2F%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F-1-1-scaled.jpg?alt=media&amp;token=405e2722-52ae-433e-8e97-e987bc498288" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Moodle管理者教學】維護成員資料：忘記密碼又沒收到認證信怎麼辦？"/></a><div class="content"><a class="title" href="/2024/06/24/%E3%80%90Moodle%E7%AE%A1%E7%90%86%E8%80%85%E6%95%99%E5%AD%B8%E3%80%91%E7%B6%AD%E8%AD%B7%E6%88%90%E5%93%A1%E8%B3%87%E6%96%99%EF%BC%9A%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%E5%8F%88%E6%B2%92%E6%94%B6%E5%88%B0%E8%AA%8D%E8%AD%89%E4%BF%A1%E6%80%8E%E9%BA%BC%E8%BE%A6%EF%BC%9F/" title="【Moodle管理者教學】維護成員資料：忘記密碼又沒收到認證信怎麼辦？">【Moodle管理者教學】維護成員資料：忘記密碼又沒收到認證信怎麼辦？</a><time datetime="2024-06-24T15:27:50.000Z" title="發表於 2024-06-24 23:27:50">2024-06-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/06/14/%E3%80%90%E5%89%8D%E7%AB%AF%E6%96%B0%E6%89%8B%E7%AD%86%E8%A8%98%E3%80%912-HTML%E5%B8%B8%E7%94%A8%E6%A8%99%E7%B1%A4/" title="【前端新手筆記】2-HTML常用標籤"><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/html%E6%A8%99%E7%B1%A4%2F%E8%B5%B7%E6%80%9D%E6%96%87%E7%AB%A0_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F-1-2.jpg?alt=media&amp;token=87ed38ac-8343-48a4-9b4b-4eedea8e0bc3" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【前端新手筆記】2-HTML常用標籤"/></a><div class="content"><a class="title" href="/2024/06/14/%E3%80%90%E5%89%8D%E7%AB%AF%E6%96%B0%E6%89%8B%E7%AD%86%E8%A8%98%E3%80%912-HTML%E5%B8%B8%E7%94%A8%E6%A8%99%E7%B1%A4/" title="【前端新手筆記】2-HTML常用標籤">【前端新手筆記】2-HTML常用標籤</a><time datetime="2024-06-14T15:06:23.000Z" title="發表於 2024-06-14 23:06:23">2024-06-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/06/06/%E9%9B%A2%E8%81%B7%E4%B8%80%E5%80%8B%E6%9C%88%E5%BE%8C%E7%B5%82%E6%96%BC%E9%96%8B%E5%A7%8B%E6%9C%9F%E5%BE%85%E6%AF%8F%E4%B8%80%E5%A4%A9%EF%BC%9A%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A22024%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%BF%83%E5%BE%97/" title="離職一個月後終於開始期待每一天：六角學院2024工程師體驗營心得"><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B5%B7%E6%80%9D%E6%96%87%E7%AB%A0_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.jpg?alt=media&amp;token=ce64c145-2652-4198-91f8-62ae9f2d4d64" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="離職一個月後終於開始期待每一天：六角學院2024工程師體驗營心得"/></a><div class="content"><a class="title" href="/2024/06/06/%E9%9B%A2%E8%81%B7%E4%B8%80%E5%80%8B%E6%9C%88%E5%BE%8C%E7%B5%82%E6%96%BC%E9%96%8B%E5%A7%8B%E6%9C%9F%E5%BE%85%E6%AF%8F%E4%B8%80%E5%A4%A9%EF%BC%9A%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A22024%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%BF%83%E5%BE%97/" title="離職一個月後終於開始期待每一天：六角學院2024工程師體驗營心得">離職一個月後終於開始期待每一天：六角學院2024工程師體驗營心得</a><time datetime="2024-06-06T07:02:23.000Z" title="發表於 2024-06-06 15:02:23">2024-06-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 邵 SHAO</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主題 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="閱讀模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="淺色和深色模式轉換"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="設定"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目錄"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="返回頂部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.14.0-b3"></script><script src="/js/main.js?v=4.14.0-b3"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.35/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const runMermaid = (ele) => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from(ele).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+    
+    codeMermaidEle.forEach(ele => {
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.innerHTML = `<pre class="mermaid-src" hidden>${ele.textContent}</pre>`
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (false) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js').then(runMermaidFn)
+  }
+  
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

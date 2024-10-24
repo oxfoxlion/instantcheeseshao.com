@@ -6,7 +6,7 @@
   <link href="https://oxfoxlion.github.io/atom.xml" rel="self"/>
   
   <link href="https://oxfoxlion.github.io/"/>
-  <updated>2024-10-24T01:51:59.168Z</updated>
+  <updated>2024-10-24T08:59:22.450Z</updated>
   <id>https://oxfoxlion.github.io/</id>
   
   <author>
@@ -15,6 +15,51 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【切版專題】其時手工甜點的電商網</title>
+    <link href="https://oxfoxlion.github.io/2024/10/24/%E3%80%90%E5%88%87%E7%89%88%E5%B0%88%E9%A1%8C%E3%80%91%E5%85%B6%E6%99%82%E6%89%8B%E5%B7%A5%E7%94%9C%E9%BB%9E%E7%9A%84%E9%9B%BB%E5%95%86%E7%B6%B2/"/>
+    <id>https://oxfoxlion.github.io/2024/10/24/%E3%80%90%E5%88%87%E7%89%88%E5%B0%88%E9%A1%8C%E3%80%91%E5%85%B6%E6%99%82%E6%89%8B%E5%B7%A5%E7%94%9C%E9%BB%9E%E7%9A%84%E9%9B%BB%E5%95%86%E7%B6%B2/</id>
+    <published>2024-10-24T07:04:10.000Z</published>
+    <updated>2024-10-24T08:59:22.450Z</updated>
+    
+    <content type="html"><![CDATA[<p>好的，我又來更新我的學習心得了！之前有提到我報名了六角學院的9個月培訓課程，這9個月的課程包含了3次為期2個月的直播課(總共6個月)，以及2個專題製作，今天我要來分享我終於完成了第一個專題啦!!!</p><h2 id="網頁切版專題班是什麼"><a href="#網頁切版專題班是什麼" class="headerlink" title="網頁切版專題班是什麼"></a>網頁切版專題班是什麼</h2><img src="https://cdn.filestackcontent.com/aQDebOSQTYKhjDLk5Fr8" alt="網頁切版專題班封面"><p>切版其實就是layout，前端工程師要負責透過撰寫程式碼的方式，將設計師設計好的網頁版面呈現在網站上。而這次的切版專題就是由學員來發想主題，並交由六角指派的設計師來進行設計，設計完成之後再回到學員身上來，由學員來完成開發。</p><h2 id="單人專題審查"><a href="#單人專題審查" class="headerlink" title="單人專題審查"></a>單人專題審查</h2><p>因為我在離職前就已經決定8-9月要和朋友到歐洲旅行一個月的時間，剛好卡在切版專題進行到一半的時間點，為了避免雷到組員，我在思考良久之後選擇了單人專題。但是六角學院這邊因為擔心單人挑戰，萬一勇者掛點的話會沒有辦法挽救，因此想要進行單人專題的同學都需要先經過事前審查。</p><p>審查的方式是六角會提供設計稿，而我們要完成網頁切版，另外還要提出自己的主題企劃。</p><p>過程是透過Notion的頁面進行提交和審核，助教一樣會提供回饋意見，70分以上才算及格，我因為在畫面寬度600px的情況下出現了x軸因此被扣了20分…幸好還是順利審核成功了。</p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%96%AE%E4%BA%BA%E5%B0%88%E9%A1%8C%E5%AF%A9%E6%A0%B8.png?alt=media&token=9f818a05-764d-4e86-b46e-cf3c5b2a4f4f" alt="審核過程" width="500" height="auto"><h2 id="專題教練"><a href="#專題教練" class="headerlink" title="專題教練"></a>專題教練</h2><p>審核成功之後，六角這邊就會指派專題教練給每一個組別，專題教練不同於助教，教練主要是緊盯我們的開發時程，提供我們開發過程中的建議，包含主題訂定、網站地圖、使用者故事、流程圖和繪製線搞圖等等，這些在完成之後都需要經過專題教練審核，如果有不知道怎麼撰寫的地方，教練也都會提供協助。</p><p>我覺得我的教練很讚的地方是在於他除了提供開發網站上的專業建議之外，也給了我很多關於時間管理、好用工具的技巧分享。教練甚至在成果發表前，幫助我調整我的報告流程、語速等等。</p><p>另外教練群在專題開始前的會議中，建議我們朝「最小可行性產品」的方向去進行開發，不要一次畫很大的餅，而是站穩腳步，追求完整性，這很幫助到我，讓我在開發上不會想要一步登天，最後什麼都沒完成。</p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%B0%88%E9%A1%8C%E6%95%99%E7%B7%B4.png?alt=media&token=601526aa-bdef-4fdc-9aff-e80fb4021b28" alt="Discord上的專題教練意見回饋" width="500" height="auto"><h2 id="開發歷程"><a href="#開發歷程" class="headerlink" title="開發歷程"></a>開發歷程</h2><h3 id="7-18-7-21-主題訂定"><a href="#7-18-7-21-主題訂定" class="headerlink" title="7&#x2F;18-7&#x2F;21 主題訂定"></a>7&#x2F;18-7&#x2F;21 主題訂定</h3><p><strong>其時手工甜點的電商網</strong>是我幾年前跟朋友一起創辦的甜點工作室，當時主要以擺攤和網路販售為主，後來因為各自都有工作就沒有再繼續了。</p><p>選擇它的原因主要是想到了教練說的「最小可行性產品」的開發原則，電商網站雖然不是那種很酷炫的主題，但相對來說有固定的架構、更容易製作，評估我的時間，電商網感覺是個比較好的選擇。另外當時留下的這些照片和資料，直接就是現成的網站素材，也可以節省許多蒐集資料的時間。同時也是一個我會有熱情和想法的主題，非常完美。</p><img src="https://instantcheeseshao.com/2024-Layout-Topic/assets/market-4827ae53.jpg" alt="擺攤照片" width="600" height="auto"><h3 id="7-22-7-31-網站地圖、使用者故事、線稿圖"><a href="#7-22-7-31-網站地圖、使用者故事、線稿圖" class="headerlink" title="7&#x2F;22-7&#x2F;31 網站地圖、使用者故事、線稿圖"></a>7&#x2F;22-7&#x2F;31 網站地圖、使用者故事、線稿圖</h3><p>在這個階段必須要訂定出網站的地圖、使用者故事和線稿圖，這邊我們先寫完之後，教練會提供意見，就這樣一來一往花了不少時間，但也學到了如何去規劃一個網站。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E7%B6%B2%E7%AB%99%E5%9C%B0%E5%9C%96.png?alt=media&token=399bf6e2-d890-449c-a3e1-810dc40b603d" alt="我的網站地圖"></p><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E4%BD%BF%E7%94%A8%E8%80%85%E6%95%85%E4%BA%8B.png?alt=media&token=f93e0404-e22d-49d5-b58c-79f67eee9fe1" alt="我的使用者故事"></p><h3 id="7-31-8-12-設計師進行首頁設計"><a href="#7-31-8-12-設計師進行首頁設計" class="headerlink" title="7&#x2F;31-8&#x2F;12 設計師進行首頁設計"></a>7&#x2F;31-8&#x2F;12 設計師進行首頁設計</h3><p>因為我是單人專題，所以設計師只會協助我進行首頁設計，其他同學是團體專題的話，好像就是看人數有幾位，可以設計幾個頁面這樣。因此剩餘頁面我就要自己設計。</p><p>在我的線稿圖這些資料完成後，六角這邊就會指派設計助教協助我跟設計師溝通進行設計。<br><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E8%A8%AD%E8%A8%88%E7%A8%BF.png?alt=media&token=15a03804-2e3f-4f10-966b-8c953bf3d20f" alt="設計稿" width="600" height="auto"></p><h3 id="9-27-10-20專題開發"><a href="#9-27-10-20專題開發" class="headerlink" title="9&#x2F;27-10&#x2F;20專題開發"></a>9&#x2F;27-10&#x2F;20專題開發</h3><p>設計師這邊用超乎意外的光速幫我設計完成之後，我就忙著要出國旅行了，所以實際進入到專題開發的時間是9&#x2F;27回國開始。然後我就遇到了時間管理上的一大挑戰，因為同時<strong>JavaScript直播班開始啦!!!</strong></p><p>一邊要趕上學習的進度，一邊要切版，還要適應回國後的日常生活，實在是非常的瘋狂，我發現我切了兩個禮拜還在切首頁，後面的頁面完全沒有去動到。此時真的緊張到不行，但幸好在捨棄了JS班第三週的部分功課之後，還是有趕在10&#x2F;20進行發表。</p><p>過程中也有遇到購物車的按鈕切不出來、收藏按鈕有一些想實現的功能實現不出來，就很需要ChatGPT的幫助。另外六角每週兩次的程式助教服務也有幫助到我，在GPT無法解決的時候，我提問到討論區，助教就會回覆給我解決的辦法，也幫助我解決了一些問題。</p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E7%A8%8B%E5%BC%8F%E5%8A%A9%E6%95%99.png?alt=media&token=1bff69b4-991a-4ac3-9ee0-70d870bdf684" alt="程式助教" width="600" height="auto"><p>整體來說我覺得在實際開發過程中可以學到比單純上課更多的東西。這讓我想到之前有分享過的<a href="https://instantcheeseshao.com/2024/05/29/%E3%80%8A%E8%B6%85%E9%80%9F%E5%AD%B8%E7%BF%92%E3%80%8B%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98%EF%BC%9A%E7%82%BA%E4%BB%80%E9%BA%BC%E7%AB%8B%E5%8D%B3%E8%A1%8C%E5%8B%95%E6%AF%94%E8%81%BD%E8%AA%B2%E6%9B%B4%E6%9C%89%E7%94%A8%EF%BC%9F%E5%88%86%E4%BA%AB4%E5%80%8B%E7%9B%B4%E6%8E%A5%E5%AD%B8%E7%BF%92%E6%B3%95%EF%BC%81/">直接學習法</a>，也算是一種親身體驗，如果要學前端的開發，最好的方式就是去做一個作品。</p><h3 id="10-20-成果發表"><a href="#10-20-成果發表" class="headerlink" title="10&#x2F;20 成果發表"></a>10&#x2F;20 成果發表</h3><p>這次的成果發表分為2個場次舉行，第一場是在10&#x2F;20，第二場在11&#x2F;3，第二場甚至開了兩個會場，平均一天大概是17組左右的報告數量，這樣大家應該可以想像得出參加課程的人有多少了?</p><p>那之後有機會再來上傳我的成果發表影片，要特別感謝阿蘇教練在發表前兩天聽我報告，幫助我調整我的簡報和報告方式，我覺得當天的發表算是有順利結束!!!</p><h2 id="網站成果"><a href="#網站成果" class="headerlink" title="網站成果"></a>網站成果</h2><p>最後，這邊也跟大家分享我的網站成果!!<br><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%85%B6%E6%99%82%E6%89%8B%E5%B7%A5%E7%94%9C%E9%BB%9E.png?alt=media&token=423a2821-50fc-43b0-a41e-33e36af923ef" alt="網站首頁"></p><ul><li><a href="https://instantcheeseshao.com/2024-Layout-Topic/">其時手工甜點的電商網</a></li><li><a href="https://github.com/oxfoxlion/2024-Layout-Topic">Repo</a></li></ul><p>目前這個網站還有一些版面尚未完工，我也會持續學習新的技能，繼續完善這個作品。那麼我們就下次見啦!!</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;好的，我又來更新我的學習心得了！之前有提到我報名了六角學院的9個月培訓課程，這9個月的課程包含了3次為期2個月的直播課(總共6個月)，以及2個專題製作，今天我要來分享我終於完成了第一個專題啦!!!&lt;/p&gt;
+&lt;h2 id=&quot;網頁切版專題班是什麼&quot;&gt;&lt;a href=&quot;#網頁切版</summary>
+      
+    
+    
+    
+    <category term="網頁開發" scheme="https://oxfoxlion.github.io/categories/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/"/>
+    
+    <category term="學習心得" scheme="https://oxfoxlion.github.io/categories/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/%E5%AD%B8%E7%BF%92%E5%BF%83%E5%BE%97/"/>
+    
+    <category term="作品集" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
+    
+    <category term="網頁開發作品" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC%E4%BD%9C%E5%93%81/"/>
+    
+    
+    <category term="JavaScript" scheme="https://oxfoxlion.github.io/tags/JavaScript/"/>
+    
+    <category term="六角學院" scheme="https://oxfoxlion.github.io/tags/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/"/>
+    
+    <category term="網頁開發" scheme="https://oxfoxlion.github.io/tags/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/"/>
+    
+    <category term="CSS" scheme="https://oxfoxlion.github.io/tags/CSS/"/>
+    
+    <category term="HTML" scheme="https://oxfoxlion.github.io/tags/HTML/"/>
+    
+    <category term="Bootstrap" scheme="https://oxfoxlion.github.io/tags/Bootstrap/"/>
+    
+    <category term="Vite" scheme="https://oxfoxlion.github.io/tags/Vite/"/>
+    
+    <category term="GitHub" scheme="https://oxfoxlion.github.io/tags/GitHub/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript學習筆記1-什麼是變數?變數的命名與型別重點</title>
@@ -322,11 +367,258 @@
   </entry>
   
   <entry>
+    <title>活動紀錄：桃園醫院112年度主管凝聚共識研習會</title>
+    <link href="https://oxfoxlion.github.io/2023/12/27/%E6%B4%BB%E5%8B%95%E7%B4%80%E9%8C%84%EF%BC%9A%E6%A1%83%E5%9C%92%E9%86%AB%E9%99%A2112%E5%B9%B4%E5%BA%A6%E4%B8%BB%E7%AE%A1%E5%87%9D%E8%81%9A%E5%85%B1%E8%AD%98%E7%A0%94%E7%BF%92%E6%9C%83/"/>
+    <id>https://oxfoxlion.github.io/2023/12/27/%E6%B4%BB%E5%8B%95%E7%B4%80%E9%8C%84%EF%BC%9A%E6%A1%83%E5%9C%92%E9%86%AB%E9%99%A2112%E5%B9%B4%E5%BA%A6%E4%B8%BB%E7%AE%A1%E5%87%9D%E8%81%9A%E5%85%B1%E8%AD%98%E7%A0%94%E7%BF%92%E6%9C%83/</id>
+    <published>2023-12-27T06:35:34.000Z</published>
+    <updated>2024-10-24T06:38:11.914Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="作品資訊"><a href="#作品資訊" class="headerlink" title="作品資訊"></a>作品資訊</h2><p>製作時間：2023年12月<br>擔任：攝影、剪輯</p><h2 id="作品"><a href="#作品" class="headerlink" title="作品"></a>作品</h2><div style="display:flex; justify-content:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/qADEck22VNY?si=QS-tf_87ndIOgxY7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;作品資訊&quot;&gt;&lt;a href=&quot;#作品資訊&quot; class=&quot;headerlink&quot; title=&quot;作品資訊&quot;&gt;&lt;/a&gt;作品資訊&lt;/h2&gt;&lt;p&gt;製作時間：2023年12月&lt;br&gt;擔任：攝影、剪輯&lt;/p&gt;
+&lt;h2 id=&quot;作品&quot;&gt;&lt;a href=&quot;#作品&quot; class=</summary>
+      
+    
+    
+    
+    <category term="作品集" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
+    
+    <category term="影音製作" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
+    
+    
+    <category term="影音製作" scheme="https://oxfoxlion.github.io/tags/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
+    
+    <category term="攝影作品" scheme="https://oxfoxlion.github.io/tags/%E6%94%9D%E5%BD%B1%E4%BD%9C%E5%93%81/"/>
+    
+    <category term="剪輯作品" scheme="https://oxfoxlion.github.io/tags/%E5%89%AA%E8%BC%AF%E4%BD%9C%E5%93%81/"/>
+    
+    <category term="Premiere" scheme="https://oxfoxlion.github.io/tags/Premiere/"/>
+    
+    <category term="After Effect" scheme="https://oxfoxlion.github.io/tags/After-Effect/"/>
+    
+    <category term="活動紀錄" scheme="https://oxfoxlion.github.io/tags/%E6%B4%BB%E5%8B%95%E7%B4%80%E9%8C%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【獲獎】守護糖甜心 Protecting Sweethearts</title>
+    <link href="https://oxfoxlion.github.io/2023/12/24/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E5%AE%88%E8%AD%B7%E7%B3%96%E7%94%9C%E5%BF%83-Protecting-Sweethearts/"/>
+    <id>https://oxfoxlion.github.io/2023/12/24/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E5%AE%88%E8%AD%B7%E7%B3%96%E7%94%9C%E5%BF%83-Protecting-Sweethearts/</id>
+    <published>2023-12-24T06:16:18.000Z</published>
+    <updated>2024-10-24T06:33:12.860Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="作品資訊"><a href="#作品資訊" class="headerlink" title="作品資訊"></a>作品資訊</h2><p>製作時間：2023年11月<br>擔任：攝影、收音、剪輯、動畫</p><h2 id="作品"><a href="#作品" class="headerlink" title="作品"></a>作品</h2><div style="display:flex; justify-content:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/zo1d52cb_Hs?si=fBvUeNi4Tit0UXYz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h2 id="獲獎紀錄"><a href="#獲獎紀錄" class="headerlink" title="獲獎紀錄"></a>獲獎紀錄</h2><p>2023護理的力量Power in Nursing：國際護理創意獎暨坎城未來獅培訓計畫<br>社群媒體影響力獎</p><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%9D%8E%E5%9F%B9%E7%8D%85%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE.jpg?alt=media&token=f3dd7c12-0414-4aef-b2b9-26da89794c40" alt="得獎名單"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;作品資訊&quot;&gt;&lt;a href=&quot;#作品資訊&quot; class=&quot;headerlink&quot; title=&quot;作品資訊&quot;&gt;&lt;/a&gt;作品資訊&lt;/h2&gt;&lt;p&gt;製作時間：2023年11月&lt;br&gt;擔任：攝影、收音、剪輯、動畫&lt;/p&gt;
+&lt;h2 id=&quot;作品&quot;&gt;&lt;a href=&quot;#作品&quot; </summary>
+      
+    
+    
+    
+    <category term="作品集" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
+    
+    <category term="影音製作" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
+    
+    
+    <category term="影音製作" scheme="https://oxfoxlion.github.io/tags/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
+    
+    <category term="微電影" scheme="https://oxfoxlion.github.io/tags/%E5%BE%AE%E9%9B%BB%E5%BD%B1/"/>
+    
+    <category term="攝影作品" scheme="https://oxfoxlion.github.io/tags/%E6%94%9D%E5%BD%B1%E4%BD%9C%E5%93%81/"/>
+    
+    <category term="剪輯作品" scheme="https://oxfoxlion.github.io/tags/%E5%89%AA%E8%BC%AF%E4%BD%9C%E5%93%81/"/>
+    
+    <category term="動畫製作" scheme="https://oxfoxlion.github.io/tags/%E5%8B%95%E7%95%AB%E8%A3%BD%E4%BD%9C/"/>
+    
+    <category term="Premiere" scheme="https://oxfoxlion.github.io/tags/Premiere/"/>
+    
+    <category term="After Effect" scheme="https://oxfoxlion.github.io/tags/After-Effect/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【獲獎】生命的最後一張照片 Last Photo of Life</title>
+    <link href="https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E7%94%9F%E5%91%BD%E7%9A%84%E6%9C%80%E5%BE%8C%E4%B8%80%E5%BC%B5%E7%85%A7%E7%89%87-Last-Photo-of-Life/"/>
+    <id>https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E7%94%9F%E5%91%BD%E7%9A%84%E6%9C%80%E5%BE%8C%E4%B8%80%E5%BC%B5%E7%85%A7%E7%89%87-Last-Photo-of-Life/</id>
+    <published>2023-12-20T06:15:56.000Z</published>
+    <updated>2024-10-24T06:33:36.021Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="作品資訊"><a href="#作品資訊" class="headerlink" title="作品資訊"></a>作品資訊</h2><p>製作時間：2023年11月<br>擔任：攝影、收音、剪輯</p><h2 id="作品"><a href="#作品" class="headerlink" title="作品"></a>作品</h2><div style="display:flex; justify-content:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/nWniHPYXUUk?si=l5fmLcpzoKXK00q9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h2 id="獲獎紀錄"><a href="#獲獎紀錄" class="headerlink" title="獲獎紀錄"></a>獲獎紀錄</h2><p>2023護理的力量Power in Nursing：國際護理創意獎暨坎城未來獅培訓計畫<br>社群媒體影響力獎</p><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%9D%8E%E5%9F%B9%E7%8D%85%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE.jpg?alt=media&token=f3dd7c12-0414-4aef-b2b9-26da89794c40" alt="得獎名單"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;作品資訊&quot;&gt;&lt;a href=&quot;#作品資訊&quot; class=&quot;headerlink&quot; title=&quot;作品資訊&quot;&gt;&lt;/a&gt;作品資訊&lt;/h2&gt;&lt;p&gt;製作時間：2023年11月&lt;br&gt;擔任：攝影、收音、剪輯&lt;/p&gt;
+&lt;h2 id=&quot;作品&quot;&gt;&lt;a href=&quot;#作品&quot; cla</summary>
+      
+    
+    
+    
+    <category term="作品集" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
+    
+    <category term="影音製作" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
+    
+    
+    <category term="影音製作" scheme="https://oxfoxlion.github.io/tags/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
+    
+    <category term="微電影" scheme="https://oxfoxlion.github.io/tags/%E5%BE%AE%E9%9B%BB%E5%BD%B1/"/>
+    
+    <category term="攝影作品" scheme="https://oxfoxlion.github.io/tags/%E6%94%9D%E5%BD%B1%E4%BD%9C%E5%93%81/"/>
+    
+    <category term="剪輯作品" scheme="https://oxfoxlion.github.io/tags/%E5%89%AA%E8%BC%AF%E4%BD%9C%E5%93%81/"/>
+    
+    <category term="Premiere" scheme="https://oxfoxlion.github.io/tags/Premiere/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【獲獎】褓你安心 Feel at ease</title>
+    <link href="https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E8%A4%93%E4%BD%A0%E5%AE%89%E5%BF%83-Feel-at-ease/"/>
+    <id>https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E8%A4%93%E4%BD%A0%E5%AE%89%E5%BF%83-Feel-at-ease/</id>
+    <published>2023-12-20T06:15:35.000Z</published>
+    <updated>2024-10-24T06:33:51.430Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="作品資訊"><a href="#作品資訊" class="headerlink" title="作品資訊"></a>作品資訊</h2><p>製作時間：2023年11月<br>擔任：攝影、收音</p><h2 id="作品"><a href="#作品" class="headerlink" title="作品"></a>作品</h2><div style="display:flex; justify-content:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/nWniHPYXUUk?si=l5fmLcpzoKXK00q9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h2 id="獲獎紀錄"><a href="#獲獎紀錄" class="headerlink" title="獲獎紀錄"></a>獲獎紀錄</h2><p>2023護理的力量Power in Nursing：國際護理創意獎暨坎城未來獅培訓計畫<br>社群媒體影響力獎</p><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%9D%8E%E5%9F%B9%E7%8D%85%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE.jpg?alt=media&token=f3dd7c12-0414-4aef-b2b9-26da89794c40" alt="得獎名單"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;作品資訊&quot;&gt;&lt;a href=&quot;#作品資訊&quot; class=&quot;headerlink&quot; title=&quot;作品資訊&quot;&gt;&lt;/a&gt;作品資訊&lt;/h2&gt;&lt;p&gt;製作時間：2023年11月&lt;br&gt;擔任：攝影、收音&lt;/p&gt;
+&lt;h2 id=&quot;作品&quot;&gt;&lt;a href=&quot;#作品&quot; class=</summary>
+      
+    
+    
+    
+    <category term="作品集" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
+    
+    <category term="影音製作" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
+    
+    
+    <category term="影音製作" scheme="https://oxfoxlion.github.io/tags/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
+    
+    <category term="微電影" scheme="https://oxfoxlion.github.io/tags/%E5%BE%AE%E9%9B%BB%E5%BD%B1/"/>
+    
+    <category term="攝影作品" scheme="https://oxfoxlion.github.io/tags/%E6%94%9D%E5%BD%B1%E4%BD%9C%E5%93%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【獲獎】護失結 Nurses lost due to tie</title>
+    <link href="https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E8%AD%B7%E5%A4%B1%E7%B5%90-Nurses-lost-due-to-tie/"/>
+    <id>https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E8%AD%B7%E5%A4%B1%E7%B5%90-Nurses-lost-due-to-tie/</id>
+    <published>2023-12-20T06:15:05.000Z</published>
+    <updated>2024-10-24T06:33:59.409Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="作品資訊"><a href="#作品資訊" class="headerlink" title="作品資訊"></a>作品資訊</h2><p>製作時間：2023年11月<br>擔任：攝影、收音、剪輯</p><h2 id="作品"><a href="#作品" class="headerlink" title="作品"></a>作品</h2><div style="display:flex; justify-content:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/xEIYCveTL58?si=MouocxRUeiPWPxaa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h2 id="獲獎紀錄"><a href="#獲獎紀錄" class="headerlink" title="獲獎紀錄"></a>獲獎紀錄</h2><p>2023護理的力量Power in Nursing：國際護理創意獎暨坎城未來獅培訓計畫<br>社群媒體影響力獎</p><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%9D%8E%E5%9F%B9%E7%8D%85%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE.jpg?alt=media&token=f3dd7c12-0414-4aef-b2b9-26da89794c40" alt="得獎名單"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;作品資訊&quot;&gt;&lt;a href=&quot;#作品資訊&quot; class=&quot;headerlink&quot; title=&quot;作品資訊&quot;&gt;&lt;/a&gt;作品資訊&lt;/h2&gt;&lt;p&gt;製作時間：2023年11月&lt;br&gt;擔任：攝影、收音、剪輯&lt;/p&gt;
+&lt;h2 id=&quot;作品&quot;&gt;&lt;a href=&quot;#作品&quot; cla</summary>
+      
+    
+    
+    
+    <category term="作品集" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
+    
+    <category term="影音製作" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
+    
+    
+    <category term="影音製作" scheme="https://oxfoxlion.github.io/tags/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
+    
+    <category term="微電影" scheme="https://oxfoxlion.github.io/tags/%E5%BE%AE%E9%9B%BB%E5%BD%B1/"/>
+    
+    <category term="攝影作品" scheme="https://oxfoxlion.github.io/tags/%E6%94%9D%E5%BD%B1%E4%BD%9C%E5%93%81/"/>
+    
+    <category term="剪輯作品" scheme="https://oxfoxlion.github.io/tags/%E5%89%AA%E8%BC%AF%E4%BD%9C%E5%93%81/"/>
+    
+    <category term="Premiere" scheme="https://oxfoxlion.github.io/tags/Premiere/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【獲獎】醫療臂師 Medi Arm Master</title>
+    <link href="https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E9%86%AB%E7%99%82%E8%87%82%E5%B8%AB-Medi-Arm-Master/"/>
+    <id>https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E9%86%AB%E7%99%82%E8%87%82%E5%B8%AB-Medi-Arm-Master/</id>
+    <published>2023-12-20T06:14:20.000Z</published>
+    <updated>2024-10-24T06:34:05.309Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="作品資訊"><a href="#作品資訊" class="headerlink" title="作品資訊"></a>作品資訊</h2><p>製作時間：2023年11月<br>擔任：攝影、收音、剪輯</p><h2 id="作品"><a href="#作品" class="headerlink" title="作品"></a>作品</h2><div style="display:flex; justify-content:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/KCPNJkstojI?si=IMfCKtqMRoND4-D4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h2 id="獲獎紀錄"><a href="#獲獎紀錄" class="headerlink" title="獲獎紀錄"></a>獲獎紀錄</h2><p>2023護理的力量Power in Nursing：國際護理創意獎暨坎城未來獅培訓計畫<br>社群媒體影響力獎</p><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%9D%8E%E5%9F%B9%E7%8D%85%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE.jpg?alt=media&token=f3dd7c12-0414-4aef-b2b9-26da89794c40" alt="得獎名單"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;作品資訊&quot;&gt;&lt;a href=&quot;#作品資訊&quot; class=&quot;headerlink&quot; title=&quot;作品資訊&quot;&gt;&lt;/a&gt;作品資訊&lt;/h2&gt;&lt;p&gt;製作時間：2023年11月&lt;br&gt;擔任：攝影、收音、剪輯&lt;/p&gt;
+&lt;h2 id=&quot;作品&quot;&gt;&lt;a href=&quot;#作品&quot; cla</summary>
+      
+    
+    
+    
+    <category term="作品集" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
+    
+    <category term="影音製作" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
+    
+    
+    <category term="影音製作" scheme="https://oxfoxlion.github.io/tags/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
+    
+    <category term="微電影" scheme="https://oxfoxlion.github.io/tags/%E5%BE%AE%E9%9B%BB%E5%BD%B1/"/>
+    
+    <category term="攝影作品" scheme="https://oxfoxlion.github.io/tags/%E6%94%9D%E5%BD%B1%E4%BD%9C%E5%93%81/"/>
+    
+    <category term="剪輯作品" scheme="https://oxfoxlion.github.io/tags/%E5%89%AA%E8%BC%AF%E4%BD%9C%E5%93%81/"/>
+    
+    <category term="Premiere" scheme="https://oxfoxlion.github.io/tags/Premiere/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【獲獎】歸巢 Go Home</title>
+    <link href="https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E6%AD%B8%E5%B7%A2%20Go%20Home/"/>
+    <id>https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E6%AD%B8%E5%B7%A2%20Go%20Home/</id>
+    <published>2023-12-20T06:12:04.000Z</published>
+    <updated>2024-10-24T06:33:28.217Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="作品資訊"><a href="#作品資訊" class="headerlink" title="作品資訊"></a>作品資訊</h2><p>製作時間：2023年11月<br>擔任：攝影、收音、剪輯</p><h2 id="作品"><a href="#作品" class="headerlink" title="作品"></a>作品</h2><div style="display:flex; justify-content:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/3KFBhHLf2fk?si=X2xpVKD_dER5RvpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h2 id="獲獎紀錄"><a href="#獲獎紀錄" class="headerlink" title="獲獎紀錄"></a>獲獎紀錄</h2><p>2023護理的力量Power in Nursing：國際護理創意獎暨坎城未來獅培訓計畫<br>社群媒體影響力獎</p><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%9D%8E%E5%9F%B9%E7%8D%85%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE.jpg?alt=media&token=f3dd7c12-0414-4aef-b2b9-26da89794c40" alt="得獎名單"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;作品資訊&quot;&gt;&lt;a href=&quot;#作品資訊&quot; class=&quot;headerlink&quot; title=&quot;作品資訊&quot;&gt;&lt;/a&gt;作品資訊&lt;/h2&gt;&lt;p&gt;製作時間：2023年11月&lt;br&gt;擔任：攝影、收音、剪輯&lt;/p&gt;
+&lt;h2 id=&quot;作品&quot;&gt;&lt;a href=&quot;#作品&quot; cla</summary>
+      
+    
+    
+    
+    <category term="作品集" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
+    
+    <category term="影音製作" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
+    
+    
+    <category term="影音製作" scheme="https://oxfoxlion.github.io/tags/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
+    
+    <category term="微電影" scheme="https://oxfoxlion.github.io/tags/%E5%BE%AE%E9%9B%BB%E5%BD%B1/"/>
+    
+    <category term="攝影作品" scheme="https://oxfoxlion.github.io/tags/%E6%94%9D%E5%BD%B1%E4%BD%9C%E5%93%81/"/>
+    
+    <category term="剪輯作品" scheme="https://oxfoxlion.github.io/tags/%E5%89%AA%E8%BC%AF%E4%BD%9C%E5%93%81/"/>
+    
+    <category term="Premiere" scheme="https://oxfoxlion.github.io/tags/Premiere/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【獲獎】吸氣先鋒創新衛教工具 Pioneer Inhalation Innovative Health Education Tool</title>
     <link href="https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E5%90%B8%E6%B0%A3%E5%85%88%E9%8B%92%E5%89%B5%E6%96%B0%E8%A1%9B%E6%95%99%E5%B7%A5%E5%85%B7-Pioneer-Inhalation-Innovative-Health-Education-Tool/"/>
     <id>https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E5%90%B8%E6%B0%A3%E5%85%88%E9%8B%92%E5%89%B5%E6%96%B0%E8%A1%9B%E6%95%99%E5%B7%A5%E5%85%B7-Pioneer-Inhalation-Innovative-Health-Education-Tool/</id>
     <published>2023-12-20T05:06:33.000Z</published>
-    <updated>2024-10-24T05:09:49.231Z</updated>
+    <updated>2024-10-24T06:33:14.202Z</updated>
     
     <content type="html"><![CDATA[<h2 id="作品資訊"><a href="#作品資訊" class="headerlink" title="作品資訊"></a>作品資訊</h2><p>製作時間：2023年11月<br>擔任：攝影、收音、剪輯</p><h2 id="作品"><a href="#作品" class="headerlink" title="作品"></a>作品</h2><div style="display:flex; justify-content:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/fegyRd6PZ0g?si=tKUtzjy5exTf5ZXb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h2 id="獲獎紀錄"><a href="#獲獎紀錄" class="headerlink" title="獲獎紀錄"></a>獲獎紀錄</h2><p>2023護理的力量Power in Nursing：國際護理創意獎暨坎城未來獅培訓計畫<br>社群媒體影響力獎</p><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%9D%8E%E5%9F%B9%E7%8D%85%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE.jpg?alt=media&token=f3dd7c12-0414-4aef-b2b9-26da89794c40" alt="得獎名單"></p>]]></content>
     
@@ -352,6 +644,8 @@
     
     <category term="剪輯作品" scheme="https://oxfoxlion.github.io/tags/%E5%89%AA%E8%BC%AF%E4%BD%9C%E5%93%81/"/>
     
+    <category term="Premiere" scheme="https://oxfoxlion.github.io/tags/Premiere/"/>
+    
   </entry>
   
   <entry>
@@ -359,7 +653,7 @@
     <link href="https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E5%87%BA%E8%B5%B0%E7%9A%84%E8%AD%B7%E7%90%86%E5%A4%B1-Runaway-care-loss/"/>
     <id>https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E5%87%BA%E8%B5%B0%E7%9A%84%E8%AD%B7%E7%90%86%E5%A4%B1-Runaway-care-loss/</id>
     <published>2023-12-20T03:52:44.000Z</published>
-    <updated>2024-10-24T04:08:31.732Z</updated>
+    <updated>2024-10-24T06:43:36.067Z</updated>
     
     <content type="html"><![CDATA[<h2 id="作品資訊"><a href="#作品資訊" class="headerlink" title="作品資訊"></a>作品資訊</h2><p>製作時間：2023年11月<br>擔任：攝影、收音、剪輯</p><h2 id="作品"><a href="#作品" class="headerlink" title="作品"></a>作品</h2><div style="display:flex; justify-content:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/Rz6O3NpxvuY?si=iiC9D1qUykCjPqF-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h2 id="獲獎紀錄"><a href="#獲獎紀錄" class="headerlink" title="獲獎紀錄"></a>獲獎紀錄</h2><p>2023護理的力量Power in Nursing：國際護理創意獎暨坎城未來獅培訓計畫<br>社群媒體影響力獎</p><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%9D%8E%E5%9F%B9%E7%8D%85%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE.jpg?alt=media&token=f3dd7c12-0414-4aef-b2b9-26da89794c40" alt="得獎名單"></p>]]></content>
     
@@ -385,38 +679,9 @@
     
     <category term="剪輯作品" scheme="https://oxfoxlion.github.io/tags/%E5%89%AA%E8%BC%AF%E4%BD%9C%E5%93%81/"/>
     
-  </entry>
-  
-  <entry>
-    <title>【獲獎】紀錄片《謝謝妳供應愛 我的姊妹》</title>
-    <link href="https://oxfoxlion.github.io/2023/09/15/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E7%B4%80%E9%8C%84%E7%89%87%E3%80%8A%E8%AC%9D%E8%AC%9D%E5%A6%B3%E4%BE%9B%E6%87%89%E6%84%9B-%E6%88%91%E7%9A%84%E5%A7%8A%E5%A6%B9%E3%80%8B/"/>
-    <id>https://oxfoxlion.github.io/2023/09/15/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E7%B4%80%E9%8C%84%E7%89%87%E3%80%8A%E8%AC%9D%E8%AC%9D%E5%A6%B3%E4%BE%9B%E6%87%89%E6%84%9B-%E6%88%91%E7%9A%84%E5%A7%8A%E5%A6%B9%E3%80%8B/</id>
-    <published>2023-09-15T02:02:15.000Z</published>
-    <updated>2024-10-24T04:07:18.250Z</updated>
+    <category term="Premiere" scheme="https://oxfoxlion.github.io/tags/Premiere/"/>
     
-    <content type="html"><![CDATA[<h2 id="作品資訊"><a href="#作品資訊" class="headerlink" title="作品資訊"></a>作品資訊</h2><p>製作時間：2023年7月<br>擔任：導演、攝影、收音、剪輯、訪談</p><h2 id="作品"><a href="#作品" class="headerlink" title="作品"></a>作品</h2><div style="display:flex; justify-content:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/8TKw8a7MPnE?si=2LrwSPdMket8Fn3j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h2 id="獲獎紀錄"><a href="#獲獎紀錄" class="headerlink" title="獲獎紀錄"></a>獲獎紀錄</h2><p>本片榮獲衛生福利部部立醫院微電影競賽第三名</p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F2023.09.15%E9%83%A8%E7%AB%8B%E9%86%AB%E9%99%A2%E5%BE%AE%E9%9B%BB%E5%BD%B1%E7%AB%B6%E8%B3%BD%E7%8D%B2%E7%8D%8E.jpg?alt=media&token=5ba338d2-c1b4-424c-a2a4-31e8d3c639be" width="560" height="auto" alt="獎牌">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;作品資訊&quot;&gt;&lt;a href=&quot;#作品資訊&quot; class=&quot;headerlink&quot; title=&quot;作品資訊&quot;&gt;&lt;/a&gt;作品資訊&lt;/h2&gt;&lt;p&gt;製作時間：2023年7月&lt;br&gt;擔任：導演、攝影、收音、剪輯、訪談&lt;/p&gt;
-&lt;h2 id=&quot;作品&quot;&gt;&lt;a href=&quot;#作品</summary>
-      
-    
-    
-    
-    <category term="作品集" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
-    
-    <category term="影音製作" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
-    
-    
-    <category term="影音製作" scheme="https://oxfoxlion.github.io/tags/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
-    
-    <category term="剪輯作品" scheme="https://oxfoxlion.github.io/tags/%E5%89%AA%E8%BC%AF%E4%BD%9C%E5%93%81/"/>
-    
-    <category term="紀錄片" scheme="https://oxfoxlion.github.io/tags/%E7%B4%80%E9%8C%84%E7%89%87/"/>
-    
-    <category term="導演作品" scheme="https://oxfoxlion.github.io/tags/%E5%B0%8E%E6%BC%94%E4%BD%9C%E5%93%81/"/>
+    <category term="收音作品" scheme="https://oxfoxlion.github.io/tags/%E6%94%B6%E9%9F%B3%E4%BD%9C%E5%93%81/"/>
     
   </entry>
   

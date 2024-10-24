@@ -104,7 +104,7 @@ deploy:
   type: git
   repo: https://github.com/oxfoxlion/oxfoxlion.github.io.git 
   branch: gh-pages
-  message: '0722-new'
+  message: 'new'
 
 
 cname:

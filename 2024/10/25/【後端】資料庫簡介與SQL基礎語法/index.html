@@ -1,0 +1,298 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>【後端】資料庫簡介與SQL基礎語法 | 即溶啟思</title><meta name="author" content="邵 SHAO"><meta name="copyright" content="邵 SHAO"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="這兩天報名了六角學院的後端工程師體驗營，今天馬上把預習影片看完，來寫筆記了!! 什麼是資料庫日常生活中我們會使用到非常多的資料庫，比方說去超市買菜，每個商品條碼的背後都是一個資料庫，紀錄了商品的價格、庫存、折扣是多少等資料，其實它就像是一個Excel表，以統一的格式進行紀錄，並且透過系統(伺服器)去管理這些資料。  就拿我之前賣餅乾時候計算包裝的試算表來說明吧，這裡每一橫列(row)都是一筆資料(">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【後端】資料庫簡介與SQL基礎語法">
+<meta property="og:url" content="https://oxfoxlion.github.io/2024/10/25/%E3%80%90%E5%BE%8C%E7%AB%AF%E3%80%91%E8%B3%87%E6%96%99%E5%BA%AB%E7%B0%A1%E4%BB%8B%E8%88%87SQL%E5%9F%BA%E7%A4%8E%E8%AA%9E%E6%B3%95/index.html">
+<meta property="og:site_name" content="即溶啟思">
+<meta property="og:description" content="這兩天報名了六角學院的後端工程師體驗營，今天馬上把預習影片看完，來寫筆記了!! 什麼是資料庫日常生活中我們會使用到非常多的資料庫，比方說去超市買菜，每個商品條碼的背後都是一個資料庫，紀錄了商品的價格、庫存、折扣是多少等資料，其實它就像是一個Excel表，以統一的格式進行紀錄，並且透過系統(伺服器)去管理這些資料。  就拿我之前賣餅乾時候計算包裝的試算表來說明吧，這裡每一橫列(row)都是一筆資料(">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%8B%E7%B4%B9%2F%E5%BE%8C%E7%AB%AF%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%8B%E7%B4%B9.png?alt=media&token=988c9905-ba8e-46ba-8d5b-797c03390126">
+<meta property="article:published_time" content="2024-10-25T07:20:03.000Z">
+<meta property="article:modified_time" content="2024-10-25T09:50:24.856Z">
+<meta property="article:author" content="邵 SHAO">
+<meta property="article:tag" content="六角學院">
+<meta property="article:tag" content="網頁開發">
+<meta property="article:tag" content="SQL">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%8B%E7%B4%B9%2F%E5%BE%8C%E7%AB%AF%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%8B%E7%B4%B9.png?alt=media&token=988c9905-ba8e-46ba-8d5b-797c03390126"><link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E5%8D%B3%E6%BA%B6%E8%B5%B7%E6%80%9D%E9%A0%BB%E9%81%930226_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.jpg?alt=media&token=238c8da3-4caf-4633-8ff0-02a758815f9f"><link rel="canonical" href="https://oxfoxlion.github.io/2024/10/25/%E3%80%90%E5%BE%8C%E7%AB%AF%E3%80%91%E8%B3%87%E6%96%99%E5%BA%AB%E7%B0%A1%E4%BB%8B%E8%88%87SQL%E5%9F%BA%E7%A4%8E%E8%AA%9E%E6%B3%95/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.14.0-b3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.35/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>(()=>{
+      const saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+      
+      window.btf = {
+        saveToLocal: saveToLocal,
+        getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+          script.src = url
+          script.async = true
+          script.onerror = reject
+          script.onload = script.onreadystatechange = function() {
+            const loadState = this.readyState
+            if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+            script.onload = script.onreadystatechange = null
+            resolve()
+          }
+
+          Object.keys(attr).forEach(key => {
+            script.setAttribute(key, attr[key])
+          })
+
+          document.head.appendChild(script)
+        }),
+
+        getCSS: (url, id = false) => new Promise((resolve, reject) => {
+          const link = document.createElement('link')
+          link.rel = 'stylesheet'
+          link.href = url
+          if (id) link.id = id
+          link.onerror = reject
+          link.onload = link.onreadystatechange = function() {
+            const loadState = this.readyState
+            if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+            link.onload = link.onreadystatechange = null
+            resolve()
+          }
+          document.head.appendChild(link)
+        }),
+
+        addGlobalFn: (key, fn, name = false, parent = window) => {
+          const pjaxEnable = false
+          if (!pjaxEnable && key.startsWith('pjax')) return
+
+          const globalFn = parent.globalFn || {}
+          const keyObj = globalFn[key] || {}
+    
+          if (name && keyObj[name]) return
+    
+          name = name || Object.keys(keyObj).length
+          keyObj[name] = fn
+          globalFn[key] = keyObj
+          parent.globalFn = globalFn
+        }
+      }
+    
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+      
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })()</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":true,"highlightMacStyle":false},
+  copy: {
+    success: '複製成功',
+    error: '複製錯誤',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '載入更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '【後端】資料庫簡介與SQL基礎語法',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-10-25 17:50:24'
+}</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="即溶啟思" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://gravatar.com/userimage/249589667/5fe7b02aef00ead31e296938b8d87bb8.jpeg?size=256" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">13</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> Home</span></a></div><div class="menus_item"><span class="site-page group"><span> 閱讀筆記</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98/%E6%96%87%E5%AD%B8%E5%B0%8F%E8%AA%AA/"><span> 文學小說</span></a></li><li><a class="site-page child" href="/categories/%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98/%E5%80%8B%E4%BA%BA%E6%88%90%E9%95%B7/"><span> 個人成長</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 網頁開發</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/%E5%AD%B8%E7%BF%92%E5%BF%83%E5%BE%97/"><span> 學習心得</span></a></li><li><a class="site-page child" href="/categories/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/"><span> 學習筆記</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 工具教學</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E5%AD%B8/Moodle/"><span> Moodle教學</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 生活紀錄</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E7%94%9F%E6%B4%BB%E7%B4%80%E9%8C%84/%E9%82%B5%E5%9C%A8%E6%97%85%E8%A1%8C/"><span> 邵在旅行</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 作品集</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"><span> 影音製作</span></a></li><li><a class="site-page child" href="/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC%E4%BD%9C%E5%93%81/"><span> 網頁開發</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="即溶啟思"><img class="site-icon" src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E5%8D%B3%E6%BA%B6%E8%B5%B7%E6%80%9D%E9%A0%BB%E9%81%930226_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.jpg?alt=media&amp;token=238c8da3-4caf-4633-8ff0-02a758815f9f" alt="Logo"/><span class="site-name">即溶啟思</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> Home</span></a></div><div class="menus_item"><span class="site-page group"><span> 閱讀筆記</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98/%E6%96%87%E5%AD%B8%E5%B0%8F%E8%AA%AA/"><span> 文學小說</span></a></li><li><a class="site-page child" href="/categories/%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98/%E5%80%8B%E4%BA%BA%E6%88%90%E9%95%B7/"><span> 個人成長</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 網頁開發</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/%E5%AD%B8%E7%BF%92%E5%BF%83%E5%BE%97/"><span> 學習心得</span></a></li><li><a class="site-page child" href="/categories/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/"><span> 學習筆記</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 工具教學</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E5%AD%B8/Moodle/"><span> Moodle教學</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 生活紀錄</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E7%94%9F%E6%B4%BB%E7%B4%80%E9%8C%84/%E9%82%B5%E5%9C%A8%E6%97%85%E8%A1%8C/"><span> 邵在旅行</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 作品集</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"><span> 影音製作</span></a></li><li><a class="site-page child" href="/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC%E4%BD%9C%E5%93%81/"><span> 網頁開發</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">【後端】資料庫簡介與SQL基礎語法</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">發表於</span><time class="post-meta-date-created" datetime="2024-10-25T07:20:03.000Z" title="發表於 2024-10-25 15:20:03">2024-10-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新於</span><time class="post-meta-date-updated" datetime="2024-10-25T09:50:24.856Z" title="更新於 2024-10-25 17:50:24">2024-10-25</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/">網頁開發</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/">學習筆記</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="【後端】資料庫簡介與SQL基礎語法"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">閱讀量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><p>這兩天報名了六角學院的後端工程師體驗營，今天馬上把預習影片看完，來寫筆記了!!</p>
+<h2 id="什麼是資料庫"><a href="#什麼是資料庫" class="headerlink" title="什麼是資料庫"></a>什麼是資料庫</h2><p>日常生活中我們會使用到非常多的資料庫，比方說去超市買菜，每個商品條碼的背後都是一個資料庫，紀錄了商品的價格、庫存、折扣是多少等資料，其實它就像是一個Excel表，以統一的格式進行紀錄，並且透過系統(伺服器)去管理這些資料。</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%8B%E7%B4%B9%2F%E5%B1%AC%E6%80%A7%E8%88%87%E8%B3%87%E6%96%99.png?alt=media&token=7fc936e6-ee01-4700-9f19-398d4d5437f2" alt="欄與列"></p>
+<p>就拿我之前賣餅乾時候計算包裝的試算表來說明吧，這裡每一橫列(row)都是一筆資料(紅色框框)，每一直欄(column)都是一個屬性(綠色框框)，記載這筆資料的某個訊息。</p>
+<p>其實就跟Notion的Database是一樣，每一筆資料都可以設定多個不同的屬性，並且透過表格的方式可以看得出差異、能夠做比較。<br><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%8B%E7%B4%B9%2FNotion.png?alt=media&token=b0836539-0ac1-4221-9f6d-714609587e76" alt="notion資料庫"></p>
+<p>如果單獨把Notion的其中一筆資料拉出來看，就會長這樣，這樣應該就很容易感受得出來屬性與資料的差異在哪裡了。不同於課表這類一般的表格，資料庫的資料是一筆一筆向下新增，每筆資料都會共用一樣的這些屬性，而屬性可以有多個。</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%8B%E7%B4%B9%2F%E4%B8%80%E7%AD%86%E8%B3%87%E6%96%99.png?alt=media&token=f14ad2b7-2511-4243-acd5-5b7edf6d9298" alt="一筆資料"></p>
+<h2 id="什麼是SQL"><a href="#什麼是SQL" class="headerlink" title="什麼是SQL"></a>什麼是SQL</h2><p>SQL(Structured Query Language) 中文稱作結構化查詢語言，是用來管理資料庫的程式語言</p>
+<h2 id="資料表建立與寫入"><a href="#資料表建立與寫入" class="headerlink" title="資料表建立與寫入"></a>資料表建立與寫入</h2><h3 id="如何建立資料表"><a href="#如何建立資料表" class="headerlink" title="如何建立資料表"></a>如何建立資料表</h3><p>建立資料表可以使用CREATE TABLE語法加上自訂義資料表名稱，接著用括號將欄位(columns)制定出來</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 建立 資料表 自訂名稱(屬性 資料型別Type,屬性 資料型別Type);</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> products(</span><br><span class="line">  品項 <span class="type">VARCHAR</span>(<span class="number">20</span>), <span class="comment">--屬性名稱 僅限文字(上限20字), 以逗號隔開，再輸入下一個欄位設定 </span></span><br><span class="line">  品牌 <span class="type">VARCHAR</span>(<span class="number">20</span>),</span><br><span class="line">  單價 <span class="type">INTEGER</span>, <span class="comment">-- integer是整數的意思</span></span><br><span class="line">  數量 <span class="type">INTEGER</span></span><br><span class="line">); <span class="comment">--以分號表示這段程式碼結束了</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="如何寫入資料"><a href="#如何寫入資料" class="headerlink" title="如何寫入資料"></a>如何寫入資料</h3><p>建立好資料表之後，我們就可以開始來新增一筆一筆的資料，使用INSERT INTO 加上自訂資料表的名稱來進行寫入，請看下方程式碼</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 選擇要寫入的資料表(選擇要寫入的屬性欄位)，注意順序</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> products (品項,品牌,單價,數量)</span><br><span class="line"><span class="keyword">VALUES</span> </span><br><span class="line">(<span class="string">&#x27;7*10cm封口袋&#x27;</span>,<span class="string">&#x27;蝦皮&#x27;</span>,<span class="number">35</span>,<span class="number">100</span>), <span class="comment">--VALUE後面就可以加入資料，記得還沒結束的話要使用逗號隔開</span></span><br><span class="line">(<span class="string">&#x27;9*11.5cm封口袋&#x27;</span>,<span class="string">&#x27;蝦皮&#x27;</span>,<span class="number">40</span>,<span class="number">100</span>),</span><br><span class="line">(<span class="string">&#x27;10*13cm封口袋&#x27;</span>,<span class="string">&#x27;蝦皮&#x27;</span>,<span class="number">50</span>,<span class="number">100</span>); <span class="comment">--已經結束了的話用分號隔開</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="如何查找資料"><a href="#如何查找資料" class="headerlink" title="如何查找資料"></a>如何查找資料</h2><p>建立好資料之後當然要先確認一下資料有沒有正確被記錄，所以我們使用SELECT語法來查看</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 選擇 萬用字元在這邊表示所有的屬性 然後透過FROM指定要查詢的資料表</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%8B%E7%B4%B9%2F%E7%B5%90%E6%9E%9C1.png?alt=media&token=5e8c0321-6277-4e62-9ae3-9299c3cc1dbd" alt="查詢結果"></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--如果只要查詢部分的資料，可以把萬用字元替換成屬性名稱</span></span><br><span class="line"><span class="keyword">SELECT</span> 品項,單價 <span class="keyword">FROM</span> products;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%8B%E7%B4%B9%2F%E7%B5%90%E6%9E%9C2.png?alt=media&token=d7b5ce6e-9e5e-461f-8bdb-2ac42774efd8" alt="查詢結果"></p>
+<h3 id="如何設定屬性的別稱"><a href="#如何設定屬性的別稱" class="headerlink" title="如何設定屬性的別稱"></a>如何設定屬性的別稱</h3><p>一樣使用SELECT，先選擇我們要的爛位，並透過AS制定別稱，最後再指向我們要修改的資料表。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line">  品項 <span class="keyword">AS</span> name, <span class="comment">--一樣記得這邊要加入逗號</span></span><br><span class="line">  單價 <span class="keyword">AS</span> price</span><br><span class="line"><span class="keyword">FROM</span> products;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%8B%E7%B4%B9%2F%E7%B5%90%E6%9E%9C3.png?alt=media&token=b28b42d6-4dfb-40ef-899d-88ea2d825ead" alt="透過AS制定別稱"></p>
+<p>AS 語法也可以用來進行運算</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line">  品項 ,</span><br><span class="line">  <span class="number">1000</span> <span class="operator">/</span> 單價 <span class="keyword">AS</span> 最低出貨量</span><br><span class="line"><span class="keyword">FROM</span> products;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%8B%E7%B4%B9%2F%E7%B5%90%E6%9E%9C4.png?alt=media&token=218b56b4-4f65-4cc8-8ebe-e623c0235d3d" alt="AS 語法也可以用來進行運算"></p>
+<p>但是這邊制定的別稱以及運算結果，只會用在該次搜尋上，並不會把運用AS計算之後的結果記錄回資料表。</p>
+<h3 id="如何篩選資料"><a href="#如何篩選資料" class="headerlink" title="如何篩選資料"></a>如何篩選資料</h3><p>使用WHERE語法可以進行資料的篩選</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products <span class="comment">-- 一樣要先指定資料表</span></span><br><span class="line"><span class="keyword">WHERE</span> 品項 <span class="operator">=</span> <span class="string">&#x27;7*10cm封口袋&#x27;</span>; <span class="comment">--WHERE後面接要查詢的屬性以及該屬性的值</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%8B%E7%B4%B9%2F%E7%B5%90%E6%9E%9C5.png?alt=media&token=420919a5-3aa6-46e8-96aa-308cb6bd05ed" alt="WHERE語法可以進行資料的篩選"></p>
+<h3 id="使用比較運算子篩選資料"><a href="#使用比較運算子篩選資料" class="headerlink" title="使用比較運算子篩選資料"></a>使用比較運算子篩選資料</h3><p>一樣是使用剛剛搜尋資料的SELECT和WHERE語法，再加上一些條件就可以更精確地來搜尋我們要的資料<br>比方說透過比較運算子，我們可以查出單價小於40元的包裝</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products <span class="comment">-- 一樣要先指定資料表</span></span><br><span class="line"><span class="keyword">WHERE</span> 單價 <span class="operator">&lt;</span> <span class="number">40</span>; </span><br></pre></td></tr></table></figure>
+<h3 id="使用邏輯運算子篩選多個條件"><a href="#使用邏輯運算子篩選多個條件" class="headerlink" title="使用邏輯運算子篩選多個條件"></a>使用邏輯運算子篩選多個條件</h3><p>如果有很多個條件要同時符合的話，可以使用邏輯運算子</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products <span class="comment">-- 一樣要先指定資料表</span></span><br><span class="line"><span class="keyword">WHERE</span> 單價 <span class="operator">&lt;</span> <span class="number">40</span> </span><br><span class="line"><span class="keyword">AND</span> 品牌 <span class="operator">=</span> <span class="string">&#x27;蝦皮&#x27;</span>; </span><br></pre></td></tr></table></figure>
+
+<p>如果2個條件只要滿足其1，可以使用OR</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products <span class="comment">-- 一樣要先指定資料表</span></span><br><span class="line"><span class="keyword">WHERE</span> 單價 <span class="operator">&lt;</span> <span class="number">40</span> </span><br><span class="line"><span class="keyword">OR</span> 品牌 <span class="operator">=</span> <span class="string">&#x27;蝦皮&#x27;</span>; </span><br></pre></td></tr></table></figure>
+
+<h3 id="集合與範圍運算子"><a href="#集合與範圍運算子" class="headerlink" title="集合與範圍運算子"></a>集合與範圍運算子</h3><h4 id="BETWEEN"><a href="#BETWEEN" class="headerlink" title="BETWEEN"></a>BETWEEN</h4><p>可以查找介於兩個範圍之間的紀錄</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products <span class="comment">-- 一樣要先指定資料表</span></span><br><span class="line"><span class="keyword">WHERE</span> 單價 <span class="keyword">BETWEEN</span> <span class="number">30</span> <span class="keyword">AND</span> <span class="number">50</span>;  </span><br></pre></td></tr></table></figure>
+
+<h4 id="IN"><a href="#IN" class="headerlink" title="IN()"></a>IN()</h4><p>可以查找所有符合的項目</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products <span class="comment">-- 一樣要先指定資料表</span></span><br><span class="line"><span class="keyword">WHERE</span> 品牌 <span class="keyword">IN</span> (<span class="string">&#x27;蝦皮&#x27;</span>,<span class="string">&#x27;幸福家&#x27;</span>);  </span><br></pre></td></tr></table></figure>
+
+<h4 id="NOT-IN"><a href="#NOT-IN" class="headerlink" title="NOT IN()"></a>NOT IN()</h4><p>可以排除所有符合的項目</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products <span class="comment">-- 一樣要先指定資料表</span></span><br><span class="line"><span class="keyword">WHERE</span> 品牌 <span class="keyword">NOT</span> <span class="keyword">IN</span> (<span class="string">&#x27;蝦皮&#x27;</span>,<span class="string">&#x27;幸福家&#x27;</span>);  </span><br></pre></td></tr></table></figure>
+
+<h2 id="如何更新資料"><a href="#如何更新資料" class="headerlink" title="如何更新資料"></a>如何更新資料</h2><p>使用UPDATE 可以進行資料的更新</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> products <span class="comment">--這邊不需要加上FROM</span></span><br><span class="line"><span class="keyword">SET</span> 品牌 <span class="operator">=</span> <span class="string">&#x27;幸福家&#x27;</span>,</span><br><span class="line">    數量 <span class="operator">=</span> <span class="number">250</span></span><br><span class="line"><span class="keyword">WHERE</span> 品項 <span class="operator">=</span> <span class="string">&#x27;7*10cm封口袋&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%8B%E7%B4%B9%2F%E7%B5%90%E6%9E%9C6.png?alt=media&token=6c39638f-7b51-4faa-9351-a95d3c228d2d" alt="更新結果"></p>
+<p>看到下方的結果就知道更新囉，但還是可以再執行一次SELECT確認一下<br><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%8B%E7%B4%B9%2F%E7%B5%90%E6%9E%9C7.png?alt=media&token=db39dfad-d3f2-4108-b875-d968c413f062" alt="執行一次SELECT確認更新結果"></p>
+<h2 id="如何刪除資料"><a href="#如何刪除資料" class="headerlink" title="如何刪除資料"></a>如何刪除資料</h2><p>使用DELETE 可以進行資料刪除</p>
+<h3 id="單筆資料刪除法"><a href="#單筆資料刪除法" class="headerlink" title="單筆資料刪除法"></a>單筆資料刪除法</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> products <span class="comment">--這邊就加上FROM囉</span></span><br><span class="line"><span class="keyword">WHERE</span> 品項 <span class="operator">=</span> <span class="string">&#x27;10*13cm封口袋&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="條件刪除法"><a href="#條件刪除法" class="headerlink" title="條件刪除法"></a>條件刪除法</h3><p>搭配條件式可以進行多筆資料的刪除</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> price <span class="keyword">BETWEEN</span> <span class="number">30</span> <span class="keyword">AND</span> <span class="number">50</span>; <span class="comment">--指定刪除價格範圍在30到50區間的品項</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="多個條件刪除法"><a href="#多個條件刪除法" class="headerlink" title="多個條件刪除法"></a>多個條件刪除法</h3><p>刪除多個條件的方法也跟查詢多個條件的方法是一樣的</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products <span class="comment">-- 一樣要先指定資料表</span></span><br><span class="line"><span class="keyword">WHERE</span> 單價 <span class="operator">&lt;</span> <span class="number">40</span> </span><br><span class="line"><span class="keyword">AND</span> 品牌 <span class="operator">=</span> <span class="string">&#x27;蝦皮&#x27;</span>; </span><br></pre></td></tr></table></figure>
+
+<p>那麼今天的筆記就到這邊，就這樣看影片、寫筆記竟然也用掉了一天的時間，太可怕了，我要繼續去完成其他的作業，下次見囉。</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/">六角學院</a><a class="post-meta__tags" href="/tags/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/">網頁開發</a><a class="post-meta__tags" href="/tags/SQL/">SQL</a></div><div class="post_share"><div class="social-share" data-image="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%8B%E7%B4%B9%2F%E5%BE%8C%E7%AB%AF%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%8B%E7%B4%B9.png?alt=media&amp;token=988c9905-ba8e-46ba-8d5b-797c03390126" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2024/10/24/%E3%80%90%E5%88%87%E7%89%88%E5%B0%88%E9%A1%8C%E3%80%91%E5%85%B6%E6%99%82%E6%89%8B%E5%B7%A5%E7%94%9C%E9%BB%9E%E7%9A%84%E9%9B%BB%E5%95%86%E7%B6%B2/" title="【切版專題】其時手工甜點的電商網"><img class="cover" src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%85%B6%E6%99%82%E6%89%8B%E5%B7%A5%E7%94%9C%E9%BB%9E.png?alt=media&amp;token=423a2821-50fc-43b0-a41e-33e36af923ef" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">【切版專題】其時手工甜點的電商網</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相關推薦</span></div><div class="relatedPosts-list"><div><a href="/2024/10/24/%E3%80%90%E5%88%87%E7%89%88%E5%B0%88%E9%A1%8C%E3%80%91%E5%85%B6%E6%99%82%E6%89%8B%E5%B7%A5%E7%94%9C%E9%BB%9E%E7%9A%84%E9%9B%BB%E5%95%86%E7%B6%B2/" title="【切版專題】其時手工甜點的電商網"><img class="cover" src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%85%B6%E6%99%82%E6%89%8B%E5%B7%A5%E7%94%9C%E9%BB%9E.png?alt=media&token=423a2821-50fc-43b0-a41e-33e36af923ef" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-10-24</div><div class="title">【切版專題】其時手工甜點的電商網</div></div></a></div><div><a href="/2024/05/21/%E3%80%90%E5%89%8D%E7%AB%AF%E6%96%B0%E6%89%8B%E7%AD%86%E8%A8%98%E3%80%911-%E4%BB%80%E9%BA%BC%E6%98%AFHTML%EF%BC%9F%E4%BB%80%E9%BA%BC%E6%98%AFCSS%EF%BC%9F%E4%BD%BF%E7%94%A8CodePen%E9%AB%94%E9%A9%97%E6%92%B0%E5%AF%AB%E7%B6%B2%E7%AB%99%E5%90%A7%EF%BC%81/" title="【前端新手筆記】1-什麼是HTML？什麼是CSS？使用CodePen體驗撰寫網站吧！"><img class="cover" src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BB%80%E9%BA%BC%E6%98%AFHTML%E3%80%81CSS%2F1.jpg?alt=media&token=1181bfd4-543c-4f4d-b250-33fcdeedf747" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-05-21</div><div class="title">【前端新手筆記】1-什麼是HTML？什麼是CSS？使用CodePen體驗撰寫網站吧！</div></div></a></div><div><a href="/2024/06/14/%E3%80%90%E5%89%8D%E7%AB%AF%E6%96%B0%E6%89%8B%E7%AD%86%E8%A8%98%E3%80%912-HTML%E5%B8%B8%E7%94%A8%E6%A8%99%E7%B1%A4/" title="【前端新手筆記】2-HTML常用標籤"><img class="cover" src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/html%E6%A8%99%E7%B1%A4%2F%E8%B5%B7%E6%80%9D%E6%96%87%E7%AB%A0_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F-1-2.jpg?alt=media&token=87ed38ac-8343-48a4-9b4b-4eedea8e0bc3" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-14</div><div class="title">【前端新手筆記】2-HTML常用標籤</div></div></a></div><div><a href="/2024/10/03/JavaScript%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%981-%E4%BB%80%E9%BA%BC%E6%98%AF%E8%AE%8A%E6%95%B8-%E8%AE%8A%E6%95%B8%E7%9A%84%E5%91%BD%E5%90%8D%E8%88%87%E5%9E%8B%E5%88%A5%E9%87%8D%E9%BB%9E/" title="JavaScript學習筆記1-什麼是變數?變數的命名與型別重點"><img class="cover" src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/JavaScript1%2FDALL%C2%B7E%202024-10-03%2016.10.55%20-%20A%20notebook-style%20cover%20design%20for%20'JavaScript%20Learning%20Notes'%2C%20featuring%20the%20title%20handwritten%20in%20a%20casual%2C%20personal%20notebook%20style%20at%20the%20center.%20The.webp?alt=media&token=d7c168eb-d4a5-4187-9e25-766f4de88474" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-10-03</div><div class="title">JavaScript學習筆記1-什麼是變數?變數的命名與型別重點</div></div></a></div><div><a href="/2024/08/20/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A22024%E5%88%87%E7%89%88%E7%9B%B4%E6%92%AD%E7%8F%AD%E5%BF%83%E5%BE%97/" title="六角學院2024切版直播班心得"><img class="cover" src="https://hackmd.io/_uploads/B1EF7IV9C.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-08-20</div><div class="title">六角學院2024切版直播班心得</div></div></a></div><div><a href="/2024/06/06/%E9%9B%A2%E8%81%B7%E4%B8%80%E5%80%8B%E6%9C%88%E5%BE%8C%E7%B5%82%E6%96%BC%E9%96%8B%E5%A7%8B%E6%9C%9F%E5%BE%85%E6%AF%8F%E4%B8%80%E5%A4%A9%EF%BC%9A%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A22024%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%BF%83%E5%BE%97/" title="離職一個月後終於開始期待每一天：六角學院2024工程師體驗營心得"><img class="cover" src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B5%B7%E6%80%9D%E6%96%87%E7%AB%A0_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.jpg?alt=media&token=ce64c145-2652-4198-91f8-62ae9f2d4d64" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-06</div><div class="title">離職一個月後終於開始期待每一天：六角學院2024工程師體驗營心得</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://gravatar.com/userimage/249589667/5fe7b02aef00ead31e296938b8d87bb8.jpeg?size=256" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">邵 SHAO</div><div class="author-info__description">喜歡閱讀、分享，我在這裡練習用最簡單的方式，分享啟發思考的知識。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">13</div></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目錄</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E9%BA%BC%E6%98%AF%E8%B3%87%E6%96%99%E5%BA%AB"><span class="toc-number">1.</span> <span class="toc-text">什麼是資料庫</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E9%BA%BC%E6%98%AFSQL"><span class="toc-number">2.</span> <span class="toc-text">什麼是SQL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B3%87%E6%96%99%E8%A1%A8%E5%BB%BA%E7%AB%8B%E8%88%87%E5%AF%AB%E5%85%A5"><span class="toc-number">3.</span> <span class="toc-text">資料表建立與寫入</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E8%B3%87%E6%96%99%E8%A1%A8"><span class="toc-number">3.1.</span> <span class="toc-text">如何建立資料表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%AF%AB%E5%85%A5%E8%B3%87%E6%96%99"><span class="toc-number">3.2.</span> <span class="toc-text">如何寫入資料</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%9F%A5%E6%89%BE%E8%B3%87%E6%96%99"><span class="toc-number">4.</span> <span class="toc-text">如何查找資料</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%A8%AD%E5%AE%9A%E5%B1%AC%E6%80%A7%E7%9A%84%E5%88%A5%E7%A8%B1"><span class="toc-number">4.1.</span> <span class="toc-text">如何設定屬性的別稱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E7%AF%A9%E9%81%B8%E8%B3%87%E6%96%99"><span class="toc-number">4.2.</span> <span class="toc-text">如何篩選資料</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%AF%94%E8%BC%83%E9%81%8B%E7%AE%97%E5%AD%90%E7%AF%A9%E9%81%B8%E8%B3%87%E6%96%99"><span class="toc-number">4.3.</span> <span class="toc-text">使用比較運算子篩選資料</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E9%82%8F%E8%BC%AF%E9%81%8B%E7%AE%97%E5%AD%90%E7%AF%A9%E9%81%B8%E5%A4%9A%E5%80%8B%E6%A2%9D%E4%BB%B6"><span class="toc-number">4.4.</span> <span class="toc-text">使用邏輯運算子篩選多個條件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%86%E5%90%88%E8%88%87%E7%AF%84%E5%9C%8D%E9%81%8B%E7%AE%97%E5%AD%90"><span class="toc-number">4.5.</span> <span class="toc-text">集合與範圍運算子</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#BETWEEN"><span class="toc-number">4.5.1.</span> <span class="toc-text">BETWEEN</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IN"><span class="toc-number">4.5.2.</span> <span class="toc-text">IN()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#NOT-IN"><span class="toc-number">4.5.3.</span> <span class="toc-text">NOT IN()</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0%E8%B3%87%E6%96%99"><span class="toc-number">5.</span> <span class="toc-text">如何更新資料</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%88%AA%E9%99%A4%E8%B3%87%E6%96%99"><span class="toc-number">6.</span> <span class="toc-text">如何刪除資料</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%96%AE%E7%AD%86%E8%B3%87%E6%96%99%E5%88%AA%E9%99%A4%E6%B3%95"><span class="toc-number">6.1.</span> <span class="toc-text">單筆資料刪除法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A2%9D%E4%BB%B6%E5%88%AA%E9%99%A4%E6%B3%95"><span class="toc-number">6.2.</span> <span class="toc-text">條件刪除法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E5%80%8B%E6%A2%9D%E4%BB%B6%E5%88%AA%E9%99%A4%E6%B3%95"><span class="toc-number">6.3.</span> <span class="toc-text">多個條件刪除法</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/10/25/%E3%80%90%E5%BE%8C%E7%AB%AF%E3%80%91%E8%B3%87%E6%96%99%E5%BA%AB%E7%B0%A1%E4%BB%8B%E8%88%87SQL%E5%9F%BA%E7%A4%8E%E8%AA%9E%E6%B3%95/" title="【後端】資料庫簡介與SQL基礎語法"><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%8B%E7%B4%B9%2F%E5%BE%8C%E7%AB%AF%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%8B%E7%B4%B9.png?alt=media&amp;token=988c9905-ba8e-46ba-8d5b-797c03390126" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【後端】資料庫簡介與SQL基礎語法"/></a><div class="content"><a class="title" href="/2024/10/25/%E3%80%90%E5%BE%8C%E7%AB%AF%E3%80%91%E8%B3%87%E6%96%99%E5%BA%AB%E7%B0%A1%E4%BB%8B%E8%88%87SQL%E5%9F%BA%E7%A4%8E%E8%AA%9E%E6%B3%95/" title="【後端】資料庫簡介與SQL基礎語法">【後端】資料庫簡介與SQL基礎語法</a><time datetime="2024-10-25T07:20:03.000Z" title="發表於 2024-10-25 15:20:03">2024-10-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/24/%E3%80%90%E5%88%87%E7%89%88%E5%B0%88%E9%A1%8C%E3%80%91%E5%85%B6%E6%99%82%E6%89%8B%E5%B7%A5%E7%94%9C%E9%BB%9E%E7%9A%84%E9%9B%BB%E5%95%86%E7%B6%B2/" title="【切版專題】其時手工甜點的電商網"><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%85%B6%E6%99%82%E6%89%8B%E5%B7%A5%E7%94%9C%E9%BB%9E.png?alt=media&amp;token=423a2821-50fc-43b0-a41e-33e36af923ef" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【切版專題】其時手工甜點的電商網"/></a><div class="content"><a class="title" href="/2024/10/24/%E3%80%90%E5%88%87%E7%89%88%E5%B0%88%E9%A1%8C%E3%80%91%E5%85%B6%E6%99%82%E6%89%8B%E5%B7%A5%E7%94%9C%E9%BB%9E%E7%9A%84%E9%9B%BB%E5%95%86%E7%B6%B2/" title="【切版專題】其時手工甜點的電商網">【切版專題】其時手工甜點的電商網</a><time datetime="2024-10-24T07:04:10.000Z" title="發表於 2024-10-24 15:04:10">2024-10-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/03/JavaScript%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%981-%E4%BB%80%E9%BA%BC%E6%98%AF%E8%AE%8A%E6%95%B8-%E8%AE%8A%E6%95%B8%E7%9A%84%E5%91%BD%E5%90%8D%E8%88%87%E5%9E%8B%E5%88%A5%E9%87%8D%E9%BB%9E/" title="JavaScript學習筆記1-什麼是變數?變數的命名與型別重點"><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/JavaScript1%2FDALL%C2%B7E%202024-10-03%2016.10.55%20-%20A%20notebook-style%20cover%20design%20for%20'JavaScript%20Learning%20Notes'%2C%20featuring%20the%20title%20handwritten%20in%20a%20casual%2C%20personal%20notebook%20style%20at%20the%20center.%20The.webp?alt=media&amp;token=d7c168eb-d4a5-4187-9e25-766f4de88474" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JavaScript學習筆記1-什麼是變數?變數的命名與型別重點"/></a><div class="content"><a class="title" href="/2024/10/03/JavaScript%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%981-%E4%BB%80%E9%BA%BC%E6%98%AF%E8%AE%8A%E6%95%B8-%E8%AE%8A%E6%95%B8%E7%9A%84%E5%91%BD%E5%90%8D%E8%88%87%E5%9E%8B%E5%88%A5%E9%87%8D%E9%BB%9E/" title="JavaScript學習筆記1-什麼是變數?變數的命名與型別重點">JavaScript學習筆記1-什麼是變數?變數的命名與型別重點</a><time datetime="2024-10-03T06:06:02.000Z" title="發表於 2024-10-03 14:06:02">2024-10-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/08/20/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A22024%E5%88%87%E7%89%88%E7%9B%B4%E6%92%AD%E7%8F%AD%E5%BF%83%E5%BE%97/" title="六角學院2024切版直播班心得"><img src="https://hackmd.io/_uploads/B1EF7IV9C.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="六角學院2024切版直播班心得"/></a><div class="content"><a class="title" href="/2024/08/20/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A22024%E5%88%87%E7%89%88%E7%9B%B4%E6%92%AD%E7%8F%AD%E5%BF%83%E5%BE%97/" title="六角學院2024切版直播班心得">六角學院2024切版直播班心得</a><time datetime="2024-08-19T16:06:31.000Z" title="發表於 2024-08-20 00:06:31">2024-08-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/06/24/%E3%80%90Moodle%E7%AE%A1%E7%90%86%E8%80%85%E6%95%99%E5%AD%B8%E3%80%91%E7%B6%AD%E8%AD%B7%E6%88%90%E5%93%A1%E8%B3%87%E6%96%99%EF%BC%9A%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%E5%8F%88%E6%B2%92%E6%94%B6%E5%88%B0%E8%AA%8D%E8%AD%89%E4%BF%A1%E6%80%8E%E9%BA%BC%E8%BE%A6%EF%BC%9F/" title="【Moodle管理者教學】維護成員資料：忘記密碼又沒收到認證信怎麼辦？"><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/Moodle%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%2F%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F-1-1-scaled.jpg?alt=media&amp;token=405e2722-52ae-433e-8e97-e987bc498288" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Moodle管理者教學】維護成員資料：忘記密碼又沒收到認證信怎麼辦？"/></a><div class="content"><a class="title" href="/2024/06/24/%E3%80%90Moodle%E7%AE%A1%E7%90%86%E8%80%85%E6%95%99%E5%AD%B8%E3%80%91%E7%B6%AD%E8%AD%B7%E6%88%90%E5%93%A1%E8%B3%87%E6%96%99%EF%BC%9A%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC%E5%8F%88%E6%B2%92%E6%94%B6%E5%88%B0%E8%AA%8D%E8%AD%89%E4%BF%A1%E6%80%8E%E9%BA%BC%E8%BE%A6%EF%BC%9F/" title="【Moodle管理者教學】維護成員資料：忘記密碼又沒收到認證信怎麼辦？">【Moodle管理者教學】維護成員資料：忘記密碼又沒收到認證信怎麼辦？</a><time datetime="2024-06-24T15:27:50.000Z" title="發表於 2024-06-24 23:27:50">2024-06-24</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 邵 SHAO</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主題 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="閱讀模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="淺色和深色模式轉換"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="設定"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目錄"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="返回頂部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.14.0-b3"></script><script src="/js/main.js?v=4.14.0-b3"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.35/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const runMermaid = (ele) => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from(ele).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+    
+    codeMermaidEle.forEach(ele => {
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.innerHTML = `<pre class="mermaid-src" hidden>${ele.textContent}</pre>`
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (false) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js').then(runMermaidFn)
+  }
+  
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

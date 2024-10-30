@@ -67,9 +67,9 @@
     
     <category term="網頁開發" scheme="https://oxfoxlion.github.io/categories/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/"/>
     
-    <category term="作品集" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
-    
     <category term="學習心得" scheme="https://oxfoxlion.github.io/categories/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/%E5%AD%B8%E7%BF%92%E5%BF%83%E5%BE%97/"/>
+    
+    <category term="作品集" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
     
     <category term="網頁開發作品" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC%E4%BD%9C%E5%93%81/"/>
     
@@ -80,9 +80,9 @@
     
     <category term="網頁開發" scheme="https://oxfoxlion.github.io/tags/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/"/>
     
-    <category term="HTML" scheme="https://oxfoxlion.github.io/tags/HTML/"/>
-    
     <category term="CSS" scheme="https://oxfoxlion.github.io/tags/CSS/"/>
+    
+    <category term="HTML" scheme="https://oxfoxlion.github.io/tags/HTML/"/>
     
     <category term="Bootstrap" scheme="https://oxfoxlion.github.io/tags/Bootstrap/"/>
     
@@ -365,9 +365,40 @@
     
     <category term="網頁開發" scheme="https://oxfoxlion.github.io/tags/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/"/>
     
+    <category term="CSS" scheme="https://oxfoxlion.github.io/tags/CSS/"/>
+    
     <category term="HTML" scheme="https://oxfoxlion.github.io/tags/HTML/"/>
     
-    <category term="CSS" scheme="https://oxfoxlion.github.io/tags/CSS/"/>
+  </entry>
+  
+  <entry>
+    <title>【海報設計】TY-talk 活動系列海報</title>
+    <link href="https://oxfoxlion.github.io/2024/05/20/%E3%80%90%E6%B5%B7%E5%A0%B1%E8%A8%AD%E8%A8%88%E3%80%91TY-Talk-%E6%B4%BB%E5%8B%95%E7%B3%BB%E5%88%97%E6%B5%B7%E5%A0%B1/"/>
+    <id>https://oxfoxlion.github.io/2024/05/20/%E3%80%90%E6%B5%B7%E5%A0%B1%E8%A8%AD%E8%A8%88%E3%80%91TY-Talk-%E6%B4%BB%E5%8B%95%E7%B3%BB%E5%88%97%E6%B5%B7%E5%A0%B1/</id>
+    <published>2024-05-20T05:34:55.000Z</published>
+    <updated>2024-10-30T03:34:38.448Z</updated>
+    
+    <content type="html"><![CDATA[<p>TY-talk活動由2023起舉辦至2024年，在設計上2023年為舊版設計，2024年為新版設計，皆由我負責。</p><h2 id="2023年海報"><a href="#2023年海報" class="headerlink" title="2023年海報"></a>2023年海報</h2><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E5%B9%B3%E9%9D%A2%E8%A8%AD%E8%A8%88%E4%BD%9C%E5%93%81%E9%9B%86%2F2024%20TY%20Talk%2FTY%20Talk_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.jpg?alt=media&token=062d843e-be2c-4bbd-aa09-36eac4d0ecc6" alt="全期海報" width="500" height="auto"><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E5%B9%B3%E9%9D%A2%E8%A8%AD%E8%A8%88%E4%BD%9C%E5%93%81%E9%9B%86%2F2024%20TY%20Talk%2FTY%20Talk%20%E7%AC%AC%E4%B8%80%E8%AC%9B%202%E7%89%88_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.jpg?alt=media&token=826e568a-f5d3-4a5c-ae2d-e91776e0eaa5" alt="單堂課程海報11月" width="500" height="auto"><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E5%B9%B3%E9%9D%A2%E8%A8%AD%E8%A8%88%E4%BD%9C%E5%93%81%E9%9B%86%2F2024%20TY%20Talk%2FTY%20Talk%20%E7%AC%AC%E4%B8%89%E8%AC%9B_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.jpg?alt=media&token=189522e8-dc35-4f98-8e57-6ff1bfaa64d5" alt="單堂課程海報12月" width="500" height="auto"><h2 id="2024年海報"><a href="#2024年海報" class="headerlink" title="2024年海報"></a>2024年海報</h2><p>因主辦單位要求，希望可以更具備統一感，因此採用同一個主視覺進行設計</p><h3 id="全期課程海報"><a href="#全期課程海報" class="headerlink" title="全期課程海報"></a>全期課程海報</h3><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E5%B9%B3%E9%9D%A2%E8%A8%AD%E8%A8%88%E4%BD%9C%E5%93%81%E9%9B%86%2F2024%20TY%20Talk%2FTY%20Talk%20113%E5%B9%B4%E6%B5%B7%E5%A0%B1_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.jpg?alt=media&token=aff0ab3b-3f0a-4437-8d81-5e7d0ae3cee5" alt="2024全期課程海報" width="500" height="auto"><h3 id="每季課程海報"><a href="#每季課程海報" class="headerlink" title="每季課程海報"></a>每季課程海報</h3><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E5%B9%B3%E9%9D%A2%E8%A8%AD%E8%A8%88%E4%BD%9C%E5%93%81%E9%9B%86%2F2024%20TY%20Talk%2FTY%20Talk%20113%E5%B9%B4%E6%B5%B7%E5%A0%B1-02.jpg?alt=media&token=53bc0fa6-002a-4c99-9e1b-13695d41ef60" alt="2024每季課程海報" width="500" height="auto"><h3 id="單堂課程海報"><a href="#單堂課程海報" class="headerlink" title="單堂課程海報"></a>單堂課程海報</h3><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E5%B9%B3%E9%9D%A2%E8%A8%AD%E8%A8%88%E4%BD%9C%E5%93%81%E9%9B%86%2F2024%20TY%20Talk%2FTY%20Talk%20113%E5%B9%B4%E6%B5%B7%E5%A0%B1-03.jpg?alt=media&token=131ee3d9-24bf-4cda-a4a1-f1cc884dd8ba" alt="2024單堂課程海報" width="500" height="auto">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;TY-talk活動由2023起舉辦至2024年，在設計上2023年為舊版設計，2024年為新版設計，皆由我負責。&lt;/p&gt;
+&lt;h2 id=&quot;2023年海報&quot;&gt;&lt;a href=&quot;#2023年海報&quot; class=&quot;headerlink&quot; title=&quot;2023年海報&quot;&gt;&lt;/a&gt;2</summary>
+      
+    
+    
+    
+    <category term="作品集" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
+    
+    <category term="平面設計" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E5%B9%B3%E9%9D%A2%E8%A8%AD%E8%A8%88/"/>
+    
+    
+    <category term="平面設計" scheme="https://oxfoxlion.github.io/tags/%E5%B9%B3%E9%9D%A2%E8%A8%AD%E8%A8%88/"/>
+    
+    <category term="Illustrator" scheme="https://oxfoxlion.github.io/tags/Illustrator/"/>
+    
+    <category term="海報設計" scheme="https://oxfoxlion.github.io/tags/%E6%B5%B7%E5%A0%B1%E8%A8%AD%E8%A8%88/"/>
     
   </entry>
   
@@ -609,41 +640,6 @@
     <updated>2024-10-24T06:33:59.409Z</updated>
     
     <content type="html"><![CDATA[<h2 id="作品資訊"><a href="#作品資訊" class="headerlink" title="作品資訊"></a>作品資訊</h2><p>製作時間：2023年11月<br>擔任：攝影、收音、剪輯</p><h2 id="作品"><a href="#作品" class="headerlink" title="作品"></a>作品</h2><div style="display:flex; justify-content:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/xEIYCveTL58?si=MouocxRUeiPWPxaa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h2 id="獲獎紀錄"><a href="#獲獎紀錄" class="headerlink" title="獲獎紀錄"></a>獲獎紀錄</h2><p>2023護理的力量Power in Nursing：國際護理創意獎暨坎城未來獅培訓計畫<br>社群媒體影響力獎</p><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%9D%8E%E5%9F%B9%E7%8D%85%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE.jpg?alt=media&token=f3dd7c12-0414-4aef-b2b9-26da89794c40" alt="得獎名單"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;作品資訊&quot;&gt;&lt;a href=&quot;#作品資訊&quot; class=&quot;headerlink&quot; title=&quot;作品資訊&quot;&gt;&lt;/a&gt;作品資訊&lt;/h2&gt;&lt;p&gt;製作時間：2023年11月&lt;br&gt;擔任：攝影、收音、剪輯&lt;/p&gt;
-&lt;h2 id=&quot;作品&quot;&gt;&lt;a href=&quot;#作品&quot; cla</summary>
-      
-    
-    
-    
-    <category term="作品集" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
-    
-    <category term="影音製作" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
-    
-    
-    <category term="影音製作" scheme="https://oxfoxlion.github.io/tags/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
-    
-    <category term="微電影" scheme="https://oxfoxlion.github.io/tags/%E5%BE%AE%E9%9B%BB%E5%BD%B1/"/>
-    
-    <category term="攝影作品" scheme="https://oxfoxlion.github.io/tags/%E6%94%9D%E5%BD%B1%E4%BD%9C%E5%93%81/"/>
-    
-    <category term="剪輯作品" scheme="https://oxfoxlion.github.io/tags/%E5%89%AA%E8%BC%AF%E4%BD%9C%E5%93%81/"/>
-    
-    <category term="Premiere" scheme="https://oxfoxlion.github.io/tags/Premiere/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【獲獎】醫療臂師 Medi Arm Master</title>
-    <link href="https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E9%86%AB%E7%99%82%E8%87%82%E5%B8%AB-Medi-Arm-Master/"/>
-    <id>https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E9%86%AB%E7%99%82%E8%87%82%E5%B8%AB-Medi-Arm-Master/</id>
-    <published>2023-12-20T06:14:20.000Z</published>
-    <updated>2024-10-24T06:34:05.309Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="作品資訊"><a href="#作品資訊" class="headerlink" title="作品資訊"></a>作品資訊</h2><p>製作時間：2023年11月<br>擔任：攝影、收音、剪輯</p><h2 id="作品"><a href="#作品" class="headerlink" title="作品"></a>作品</h2><div style="display:flex; justify-content:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/KCPNJkstojI?si=IMfCKtqMRoND4-D4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h2 id="獲獎紀錄"><a href="#獲獎紀錄" class="headerlink" title="獲獎紀錄"></a>獲獎紀錄</h2><p>2023護理的力量Power in Nursing：國際護理創意獎暨坎城未來獅培訓計畫<br>社群媒體影響力獎</p><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%9D%8E%E5%9F%B9%E7%8D%85%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE.jpg?alt=media&token=f3dd7c12-0414-4aef-b2b9-26da89794c40" alt="得獎名單"></p>]]></content>
     
     
       

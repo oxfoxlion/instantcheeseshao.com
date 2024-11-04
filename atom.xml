@@ -6,7 +6,7 @@
   <link href="https://oxfoxlion.github.io/atom.xml" rel="self"/>
   
   <link href="https://oxfoxlion.github.io/"/>
-  <updated>2024-10-25T09:50:24.856Z</updated>
+  <updated>2024-11-04T15:35:16.838Z</updated>
   <id>https://oxfoxlion.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript學習筆記2-運算子是什麼</title>
+    <link href="https://oxfoxlion.github.io/2024/11/04/JavaScript%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%982-%E9%81%8B%E7%AE%97%E5%AD%90%E6%98%AF%E4%BB%80%E9%BA%BC/"/>
+    <id>https://oxfoxlion.github.io/2024/11/04/JavaScript%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%982-%E9%81%8B%E7%AE%97%E5%AD%90%E6%98%AF%E4%BB%80%E9%BA%BC/</id>
+    <published>2024-11-04T14:34:49.000Z</published>
+    <updated>2024-11-04T15:35:16.838Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="什麼是運算子"><a href="#什麼是運算子" class="headerlink" title="什麼是運算子"></a>什麼是運算子</h2><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%2FJavaScript%2FJavaScript2%2Fcalculator.jpg?alt=media&token=321d24b0-64d4-4c56-adfd-63b181d646ea" alt="計算機"></p><p>首先讓我們來觀察一下這個計算機，上面有加減乘除等按鈕，可以幫助計算機理解我們想要做些什麼，這就是運算子的功能，運算子是用來處理資料或變數的符號或關鍵字。</p><p>今天大家就當成是閱讀魔法書，來看看下面這些咒語以及咒語有哪些功能吧!!!</p><h2 id="JavaScript有哪些運算子"><a href="#JavaScript有哪些運算子" class="headerlink" title="JavaScript有哪些運算子"></a>JavaScript有哪些運算子</h2><p><a href="#%E8%B3%A6%E5%80%BC%E9%81%8B%E7%AE%97%E5%AD%90">賦值運算子</a><br><a href="#%E7%AE%97%E6%95%B8%E9%81%8B%E7%AE%97%E5%AD%90">算數運算子</a><br><a href="#%E6%AF%94%E8%BC%83%E9%81%8B%E7%AE%97%E5%AD%90">比較運算子</a><br><a href="#%E6%8C%87%E6%95%B8%E9%81%8B%E7%AE%97%E5%AD%90">指數運算子</a><br><a href="#%E9%82%8F%E8%BC%AF%E9%81%8B%E7%AE%97%E5%AD%90">邏輯運算子</a></p><h2 id="賦值運算子"><a href="#賦值運算子" class="headerlink" title="賦值運算子"></a>賦值運算子</h2><p>賦值運算子其實之前我們介紹賦予變數的時候，就已經講過了，就是這個<code>=</code>!!<br>賦值運算子的功能是可以將值紀錄到變數內。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>但除了<code>=</code>之外，還有其他的幾個賦值運算子。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">a += <span class="number">10</span>; <span class="comment">//a加10 並將結果賦值回a，此時1+10=11</span></span><br><span class="line">a ++; <span class="comment">// a加1 並將結果賦值回a，此時11+1=12</span></span><br><span class="line">a -= <span class="number">10</span>; <span class="comment">//a減10 並將結果賦值回a，此時12-10=2</span></span><br><span class="line">a --;<span class="comment">// a減1並將結果賦值回a，此時2-1=1</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(a);<span class="comment">//得出1</span></span><br></pre></td></tr></table></figure><p>我們來說明一下這些運算子：</p><ul><li><code>+=</code> 的作用是將a變數加上後面的值之後再賦予回a。</li><li><code>++</code> 的作用則是a變數+1之後賦予回a。</li><li><code>-+</code> 的作用是將a變數減掉後面的值再賦予回a。</li><li><code>--</code> 的作用是將a變數-1之後賦予回a。</li></ul><h2 id="算數運算子"><a href="#算數運算子" class="headerlink" title="算數運算子"></a>算數運算子</h2><p>算數運算子就是我們所熟悉的加減乘除<code>+</code>、<code>-</code>、<code>*</code>、<code>/</code>。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( a + b ); <span class="comment">//1+2 得出3</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( a - b ); <span class="comment">//1-2 得出-1</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( a * b ); <span class="comment">//1*2 得出2</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( a / b ); <span class="comment">//1/2 得出0.5</span></span><br></pre></td></tr></table></figure><p>除此之外，還有取餘數 <code>%</code>。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">let</span> a = <span class="number">7</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( a % <span class="number">2</span>) <span class="comment">// 7除以2之後剩下餘數1，得出1</span></span><br></pre></td></tr></table></figure><h2 id="比較運算子"><a href="#比較運算子" class="headerlink" title="比較運算子"></a>比較運算子</h2><p>比較運算子顧名思義用於比較兩者之間的差別，如果相同就返回true，如果不同就返回false。</p><ul><li><code>&gt;</code> 大於</li><li><code>&lt;</code> 小於</li><li><code>&gt;=</code> 大於等於</li><li><code>&lt;=</code> 小於等於</li><li><code>==</code> 等於，這邊要特別注意一下等於的符號是用兩個等號表示，因為一個等號為<a href="#%E8%B3%A6%E5%80%BC%E9%81%8B%E7%AE%97%E5%AD%90">賦值運算子</a>。</li><li><code>!=</code> 不等於</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">3</span> &gt; <span class="number">3</span>) <span class="comment">//得出false</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">3</span> &lt; <span class="number">2</span>) <span class="comment">//得出false</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">3</span> &gt;= <span class="number">3</span>) <span class="comment">//得出true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">2</span> &lt;= <span class="number">3</span> ) <span class="comment">//得出true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">2</span> != <span class="number">3</span>) <span class="comment">//得出true</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="嚴謹模式"><a href="#嚴謹模式" class="headerlink" title="嚴謹模式"></a>嚴謹模式</h3><p>我們剛剛提到的 <code>==</code>和<code>!=</code>，屬於寬鬆模式，舉個例子：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">1</span> == <span class="string">&quot;1&quot;</span>); <span class="comment">//回傳true</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>這邊會自動將變數做轉型，讓兩邊可以進行比對。</p><p>至於嚴謹模式，則是連型別都會列入比較的範圍裡，以<code>===</code>和<code>!==</code>來表達。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">1</span> === <span class="string">&quot;1&quot;</span>) <span class="comment">//回傳false</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>這邊將型別列入比較之後，數字型別的1，與字串型別的”1”，不能相等，所以回傳false。</p><h2 id="指數運算子"><a href="#指數運算子" class="headerlink" title="指數運算子"></a>指數運算子</h2><p>這是一個可以計算指數的咒語。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">let</span> a = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( a ** <span class="number">2</span> ) <span class="comment">//計算 a 的平方，也就是 2 * 2 = 4</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( a ** <span class="number">3</span> ) <span class="comment">//計算 a 的3次方，也就是 2 * 2 * 2 = 8</span></span><br></pre></td></tr></table></figure><h2 id="邏輯運算子"><a href="#邏輯運算子" class="headerlink" title="邏輯運算子"></a>邏輯運算子</h2><ul><li>And <code>&amp;&amp;</code></li><li>Or <code>||</code></li></ul><p>這兩個運算子主要用於了解兩邊的條件，And <code>&amp;&amp;</code> 的兩邊都必須要是true，才會返回true，Or <code>||</code>的兩邊只要有一個是true，就會返回true。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">1</span> &lt; <span class="number">2</span> &amp;&amp; <span class="number">3</span> &gt; <span class="number">2</span>); <span class="comment">// 1&lt;2 為true，3&gt;2也為true，所以最後結果為true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">1</span> &lt; <span class="number">2</span> &amp;&amp; <span class="number">3</span> &lt; <span class="number">2</span>); <span class="comment">// 1&lt;2 為true，3&lt;2 為false，所以最後結果為false</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">1</span> &lt; <span class="number">2</span> || <span class="number">3</span> &lt; <span class="number">2</span> );<span class="comment">// 1&lt;2 為true，3&lt;2 為false，但因為這邊使用Or，因此只要有一邊為true，就會返回true，最後結果為true</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;什麼是運算子&quot;&gt;&lt;a href=&quot;#什麼是運算子&quot; class=&quot;headerlink&quot; title=&quot;什麼是運算子&quot;&gt;&lt;/a&gt;什麼是運算子&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/</summary>
+      
+    
+    
+    
+    <category term="網頁開發" scheme="https://oxfoxlion.github.io/categories/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/"/>
+    
+    <category term="學習筆記" scheme="https://oxfoxlion.github.io/categories/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="Codepen" scheme="https://oxfoxlion.github.io/tags/Codepen/"/>
+    
+    <category term="JavaScript" scheme="https://oxfoxlion.github.io/tags/JavaScript/"/>
+    
+    <category term="六角學院" scheme="https://oxfoxlion.github.io/tags/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/"/>
+    
+    <category term="網頁開發" scheme="https://oxfoxlion.github.io/tags/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/"/>
+    
+  </entry>
   
   <entry>
     <title>【後端】資料庫簡介與SQL基礎語法</title>
@@ -67,9 +99,9 @@
     
     <category term="網頁開發" scheme="https://oxfoxlion.github.io/categories/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/"/>
     
-    <category term="學習心得" scheme="https://oxfoxlion.github.io/categories/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/%E5%AD%B8%E7%BF%92%E5%BF%83%E5%BE%97/"/>
-    
     <category term="作品集" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
+    
+    <category term="學習心得" scheme="https://oxfoxlion.github.io/categories/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/%E5%AD%B8%E7%BF%92%E5%BF%83%E5%BE%97/"/>
     
     <category term="網頁開發作品" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC%E4%BD%9C%E5%93%81/"/>
     
@@ -606,9 +638,9 @@
     <link href="https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E8%A4%93%E4%BD%A0%E5%AE%89%E5%BF%83-Feel-at-ease/"/>
     <id>https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E8%A4%93%E4%BD%A0%E5%AE%89%E5%BF%83-Feel-at-ease/</id>
     <published>2023-12-20T06:15:35.000Z</published>
-    <updated>2024-10-24T06:33:51.430Z</updated>
+    <updated>2024-10-30T04:21:55.528Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="作品資訊"><a href="#作品資訊" class="headerlink" title="作品資訊"></a>作品資訊</h2><p>製作時間：2023年11月<br>擔任：攝影、收音</p><h2 id="作品"><a href="#作品" class="headerlink" title="作品"></a>作品</h2><div style="display:flex; justify-content:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/nWniHPYXUUk?si=l5fmLcpzoKXK00q9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h2 id="獲獎紀錄"><a href="#獲獎紀錄" class="headerlink" title="獲獎紀錄"></a>獲獎紀錄</h2><p>2023護理的力量Power in Nursing：國際護理創意獎暨坎城未來獅培訓計畫<br>社群媒體影響力獎</p><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%9D%8E%E5%9F%B9%E7%8D%85%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE.jpg?alt=media&token=f3dd7c12-0414-4aef-b2b9-26da89794c40" alt="得獎名單"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="作品資訊"><a href="#作品資訊" class="headerlink" title="作品資訊"></a>作品資訊</h2><p>製作時間：2023年11月<br>擔任：攝影、收音</p><h2 id="作品"><a href="#作品" class="headerlink" title="作品"></a>作品</h2><div style="display:flex; justify-content:center;"><iframe width="560" height="315" src="https://www.youtube.com/watch?v=okQAoamH0cw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h2 id="獲獎紀錄"><a href="#獲獎紀錄" class="headerlink" title="獲獎紀錄"></a>獲獎紀錄</h2><p>2023護理的力量Power in Nursing：國際護理創意獎暨坎城未來獅培訓計畫<br>社群媒體影響力獎</p><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%9D%8E%E5%9F%B9%E7%8D%85%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE.jpg?alt=media&token=f3dd7c12-0414-4aef-b2b9-26da89794c40" alt="得獎名單"></p>]]></content>
     
     
       
@@ -629,41 +661,6 @@
     <category term="微電影" scheme="https://oxfoxlion.github.io/tags/%E5%BE%AE%E9%9B%BB%E5%BD%B1/"/>
     
     <category term="攝影作品" scheme="https://oxfoxlion.github.io/tags/%E6%94%9D%E5%BD%B1%E4%BD%9C%E5%93%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【獲獎】護失結 Nurses lost due to tie</title>
-    <link href="https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E8%AD%B7%E5%A4%B1%E7%B5%90-Nurses-lost-due-to-tie/"/>
-    <id>https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E8%AD%B7%E5%A4%B1%E7%B5%90-Nurses-lost-due-to-tie/</id>
-    <published>2023-12-20T06:15:05.000Z</published>
-    <updated>2024-10-24T06:33:59.409Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="作品資訊"><a href="#作品資訊" class="headerlink" title="作品資訊"></a>作品資訊</h2><p>製作時間：2023年11月<br>擔任：攝影、收音、剪輯</p><h2 id="作品"><a href="#作品" class="headerlink" title="作品"></a>作品</h2><div style="display:flex; justify-content:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/xEIYCveTL58?si=MouocxRUeiPWPxaa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h2 id="獲獎紀錄"><a href="#獲獎紀錄" class="headerlink" title="獲獎紀錄"></a>獲獎紀錄</h2><p>2023護理的力量Power in Nursing：國際護理創意獎暨坎城未來獅培訓計畫<br>社群媒體影響力獎</p><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%9D%8E%E5%9F%B9%E7%8D%85%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE.jpg?alt=media&token=f3dd7c12-0414-4aef-b2b9-26da89794c40" alt="得獎名單"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;作品資訊&quot;&gt;&lt;a href=&quot;#作品資訊&quot; class=&quot;headerlink&quot; title=&quot;作品資訊&quot;&gt;&lt;/a&gt;作品資訊&lt;/h2&gt;&lt;p&gt;製作時間：2023年11月&lt;br&gt;擔任：攝影、收音、剪輯&lt;/p&gt;
-&lt;h2 id=&quot;作品&quot;&gt;&lt;a href=&quot;#作品&quot; cla</summary>
-      
-    
-    
-    
-    <category term="作品集" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
-    
-    <category term="影音製作" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
-    
-    
-    <category term="影音製作" scheme="https://oxfoxlion.github.io/tags/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
-    
-    <category term="微電影" scheme="https://oxfoxlion.github.io/tags/%E5%BE%AE%E9%9B%BB%E5%BD%B1/"/>
-    
-    <category term="攝影作品" scheme="https://oxfoxlion.github.io/tags/%E6%94%9D%E5%BD%B1%E4%BD%9C%E5%93%81/"/>
-    
-    <category term="剪輯作品" scheme="https://oxfoxlion.github.io/tags/%E5%89%AA%E8%BC%AF%E4%BD%9C%E5%93%81/"/>
-    
-    <category term="Premiere" scheme="https://oxfoxlion.github.io/tags/Premiere/"/>
     
   </entry>
   

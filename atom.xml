@@ -6,7 +6,7 @@
   <link href="https://oxfoxlion.github.io/atom.xml" rel="self"/>
   
   <link href="https://oxfoxlion.github.io/"/>
-  <updated>2024-11-04T15:35:16.838Z</updated>
+  <updated>2024-12-06T05:23:00.725Z</updated>
   <id>https://oxfoxlion.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2024 JS工程師養成直播班 完課心得</title>
+    <link href="https://oxfoxlion.github.io/2024/12/06/2024-JS%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%A4%8A%E6%88%90%E7%9B%B4%E6%92%AD%E7%8F%AD-%E5%AE%8C%E8%AA%B2%E5%BF%83%E5%BE%97/"/>
+    <id>https://oxfoxlion.github.io/2024/12/06/2024-JS%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%A4%8A%E6%88%90%E7%9B%B4%E6%92%AD%E7%8F%AD-%E5%AE%8C%E8%AA%B2%E5%BF%83%E5%BE%97/</id>
+    <published>2024-12-06T04:47:07.000Z</published>
+    <updated>2024-12-06T05:23:00.725Z</updated>
+    
+    <content type="html"><![CDATA[<p>又是一堂直播課的結束，這次直播課感覺跟同學們之間有更多的連結，除了參加小組每週一起討論功課之外，還加入了同學發起的JS面試讀書會，也藉著這兩個活動找到了接下來專題的組員，而且組員們都超讚的，非常感謝也很期待接下來跟大家一起繼續學習的旅程。</p><p>之前已經有分享過六角學院直播班的進行模式，基本上每週會有一堂直播課、一堂助教直播，並且會有預習影音可以給大家在上課前先預習，接著在營隊正式開始的兩個月期間，每個平日都會有每日任務釋出，另外每週也都會有一個主線任務，完成所有的主線任務就會有獎品可以領，通常是延長影音的觀看時數或提供額外的課程給有完成作業的學生，身為一個熱愛學習的傢伙，我超愛這些獎品!!</p><p>那接下來我想分享下9週的學習歷程</p><h2 id="第一週到第四週"><a href="#第一週到第四週" class="headerlink" title="第一週到第四週"></a>第一週到第四週</h2><p>從變數開始學習到陣列物件的整合運用，也開始透過codewars刷題鍛鍊自己的JS邏輯，這段比較像是國小解數學題目，瘋狂解題就對了，把基礎扎穩。<br>除了盡力完成所有的作業之外，我也嘗試將自己codewars刷題的過程錄製影片上傳到<a href="https://www.youtube.com/watch?v=FvLtrTL-HPo&list=PLHNwBNbZh4OmJ2cxJQVkRoZ51-24WtR_l">YT</a>，有興趣可以前往觀看。</p><p>另外也練習寫了一些學習筆記，但本來是期待一週一篇，結果發現時間完全不夠用…希望之後再慢慢把這段筆記給補起來。</p><h2 id="第五週"><a href="#第五週" class="headerlink" title="第五週"></a>第五週</h2><p>開始學習DOM，了解如何透過JS來控制網站元素，有趣的地方就從這裡開始。</p><h2 id="第六週到第九週"><a href="#第六週到第九週" class="headerlink" title="第六週到第九週"></a>第六週到第九週</h2><p>學習如何串接API，終於了解原來前端與後端是透過API進行溝通的，也開始練習如何串接API並結合之前學到的DOM技巧，來實現出網頁的互動效果。</p><h2 id="最終作業"><a href="#最終作業" class="headerlink" title="最終作業"></a>最終作業</h2><p>最終作業是要透過串接API，完成一個電商網站的前台與後台所有功能。</p><p>其實在面對這個作業以前我拖了很久，一直在逃避去寫它，可能光聽到最終作業四個字就覺得很害怕，同學們也說會花很長時間。但實際開始撰寫之後發現原來之前的累積都不是白費的，其實因為之前的作業都有練習過了，還蠻容易寫的，大概花了6個小時左右的時間就完成了(其中還有兩個小時是偷偷趁工作時間寫的XD)，原來沒有那麼困難，是我自己給自己設限了，而且寫完之後覺得超級有成就感的。</p><p>我的撰寫方式是先弄懂每個API需要的金鑰和指令下法，確保API都有串接成功，盡情享受透過API控制後端資料庫的快感之後，才透過DOM取得API所需要的資料並藉由axios傳送指令執行API，接著再將API回傳的資料透過DOM再回傳到網站上。</p><p>這邊也想給未來回顧這篇文章的自己一點提醒，function真的是一次寫一個功能就好，再將不同功能的function組合起來，更好維護管理也更有彈性。</p><h2 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h2><p>歷經9週課程的洗禮(其實包含交出作業的這一週已經是第10週了)，我發現學習很忌諱完美主義XDD</p><p>原本我總是覺得一定要看完預習影片才能看直播課，看完直播課才能看助教直播。一定要寫完當週的每日作業和刷題任務，我才會去寫主線任務，因為總會覺得這樣的知識量才會夠，但後來發現其實主線任務沒有寫完全部的每日任務，也是可以寫的。</p><p>無論是主線任務還是每日任務，重點都在於將前面學習到的內容做練習，能夠全部都做完當然很好，但如果時間真的不允許，懂得排定優先順序、依序完成也是很重要的一件事情。不要全部都想要，而是在資源有限的情況下挑重點去做，才能夠把時間做最精華的運用。</p><p>感謝JS直播班的穎旻老師，感覺得出每周都很用心在出題、陪伴大家成長。也謝謝這10週陪伴我的夥伴們，透過JS面試讀書會和小組任務，釐清了很多本來一知半解的觀念，有夥伴互相分享進度，會讓我有危機意識，在每個想躺躺耍廢的時候，想到大家已經進展到哪裡，我最後都還是會乖乖爬起來把功課完成，再次誠摯感謝大家對我的督促。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;又是一堂直播課的結束，這次直播課感覺跟同學們之間有更多的連結，除了參加小組每週一起討論功課之外，還加入了同學發起的JS面試讀書會，也藉著這兩個活動找到了接下來專題的組員，而且組員們都超讚的，非常感謝也很期待接下來跟大家一起繼續學習的旅程。&lt;/p&gt;
+&lt;p&gt;之前已經有分享過六角</summary>
+      
+    
+    
+    
+    <category term="網頁開發" scheme="https://oxfoxlion.github.io/categories/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/"/>
+    
+    <category term="學習心得" scheme="https://oxfoxlion.github.io/categories/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/%E5%AD%B8%E7%BF%92%E5%BF%83%E5%BE%97/"/>
+    
+    
+    <category term="六角學院" scheme="https://oxfoxlion.github.io/tags/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/"/>
+    
+    <category term="網頁開發" scheme="https://oxfoxlion.github.io/tags/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript學習筆記2-運算子是什麼</title>
@@ -99,9 +128,9 @@
     
     <category term="網頁開發" scheme="https://oxfoxlion.github.io/categories/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/"/>
     
-    <category term="作品集" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
-    
     <category term="學習心得" scheme="https://oxfoxlion.github.io/categories/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/%E5%AD%B8%E7%BF%92%E5%BF%83%E5%BE%97/"/>
+    
+    <category term="作品集" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
     
     <category term="網頁開發作品" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC%E4%BD%9C%E5%93%81/"/>
     
@@ -112,9 +141,9 @@
     
     <category term="網頁開發" scheme="https://oxfoxlion.github.io/tags/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/"/>
     
-    <category term="CSS" scheme="https://oxfoxlion.github.io/tags/CSS/"/>
-    
     <category term="HTML" scheme="https://oxfoxlion.github.io/tags/HTML/"/>
+    
+    <category term="CSS" scheme="https://oxfoxlion.github.io/tags/CSS/"/>
     
     <category term="Bootstrap" scheme="https://oxfoxlion.github.io/tags/Bootstrap/"/>
     
@@ -397,9 +426,9 @@
     
     <category term="網頁開發" scheme="https://oxfoxlion.github.io/tags/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/"/>
     
-    <category term="CSS" scheme="https://oxfoxlion.github.io/tags/CSS/"/>
-    
     <category term="HTML" scheme="https://oxfoxlion.github.io/tags/HTML/"/>
+    
+    <category term="CSS" scheme="https://oxfoxlion.github.io/tags/CSS/"/>
     
   </entry>
   
@@ -590,9 +619,9 @@
     
     <category term="剪輯作品" scheme="https://oxfoxlion.github.io/tags/%E5%89%AA%E8%BC%AF%E4%BD%9C%E5%93%81/"/>
     
-    <category term="Premiere" scheme="https://oxfoxlion.github.io/tags/Premiere/"/>
-    
     <category term="動畫製作" scheme="https://oxfoxlion.github.io/tags/%E5%8B%95%E7%95%AB%E8%A3%BD%E4%BD%9C/"/>
+    
+    <category term="Premiere" scheme="https://oxfoxlion.github.io/tags/Premiere/"/>
     
     <category term="After Effect" scheme="https://oxfoxlion.github.io/tags/After-Effect/"/>
     
@@ -630,37 +659,6 @@
     <category term="剪輯作品" scheme="https://oxfoxlion.github.io/tags/%E5%89%AA%E8%BC%AF%E4%BD%9C%E5%93%81/"/>
     
     <category term="Premiere" scheme="https://oxfoxlion.github.io/tags/Premiere/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【獲獎】褓你安心 Feel at ease</title>
-    <link href="https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E8%A4%93%E4%BD%A0%E5%AE%89%E5%BF%83-Feel-at-ease/"/>
-    <id>https://oxfoxlion.github.io/2023/12/20/%E3%80%90%E7%8D%B2%E7%8D%8E%E3%80%91%E8%A4%93%E4%BD%A0%E5%AE%89%E5%BF%83-Feel-at-ease/</id>
-    <published>2023-12-20T06:15:35.000Z</published>
-    <updated>2024-10-30T04:21:55.528Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="作品資訊"><a href="#作品資訊" class="headerlink" title="作品資訊"></a>作品資訊</h2><p>製作時間：2023年11月<br>擔任：攝影、收音</p><h2 id="作品"><a href="#作品" class="headerlink" title="作品"></a>作品</h2><div style="display:flex; justify-content:center;"><iframe width="560" height="315" src="https://www.youtube.com/watch?v=okQAoamH0cw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h2 id="獲獎紀錄"><a href="#獲獎紀錄" class="headerlink" title="獲獎紀錄"></a>獲獎紀錄</h2><p>2023護理的力量Power in Nursing：國際護理創意獎暨坎城未來獅培訓計畫<br>社群媒體影響力獎</p><p><img src="https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E4%BD%9C%E5%93%81%E9%9B%86%2F%E5%9D%8E%E5%9F%B9%E7%8D%85%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE.jpg?alt=media&token=f3dd7c12-0414-4aef-b2b9-26da89794c40" alt="得獎名單"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;作品資訊&quot;&gt;&lt;a href=&quot;#作品資訊&quot; class=&quot;headerlink&quot; title=&quot;作品資訊&quot;&gt;&lt;/a&gt;作品資訊&lt;/h2&gt;&lt;p&gt;製作時間：2023年11月&lt;br&gt;擔任：攝影、收音&lt;/p&gt;
-&lt;h2 id=&quot;作品&quot;&gt;&lt;a href=&quot;#作品&quot; class=</summary>
-      
-    
-    
-    
-    <category term="作品集" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/"/>
-    
-    <category term="影音製作" scheme="https://oxfoxlion.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
-    
-    
-    <category term="影音製作" scheme="https://oxfoxlion.github.io/tags/%E5%BD%B1%E9%9F%B3%E8%A3%BD%E4%BD%9C/"/>
-    
-    <category term="微電影" scheme="https://oxfoxlion.github.io/tags/%E5%BE%AE%E9%9B%BB%E5%BD%B1/"/>
-    
-    <category term="攝影作品" scheme="https://oxfoxlion.github.io/tags/%E6%94%9D%E5%BD%B1%E4%BD%9C%E5%93%81/"/>
     
   </entry>
   
